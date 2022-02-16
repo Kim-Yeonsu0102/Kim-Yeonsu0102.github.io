@@ -1,0 +1,15 @@
+#AboutMe .aboutArea {
+  min-height: 400px;
+  margin: 2rem 0 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#AboutMe .aboutArea .aboutMe {
+  padding: 0 1rem;
+}
+
+@media (min-width: 576px) and (min-width: 768px) {
+  #AboutMe .aboutArea .aboutMe {
+    text-align: center;
+  }
+}

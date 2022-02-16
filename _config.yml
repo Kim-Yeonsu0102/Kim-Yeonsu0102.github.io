@@ -1,0 +1,62 @@
+# Site
+name: '김연수 포트폴리오'
+description: '김연수의 포트폴리오에 오신것을 환영합니다.'
+logo: 'assets/images/logo.png'
+favicon: 'assets/images/favicon.ico'
+baseurl: 
+disqus: 'portfolio'
+email: 'yeonsu_0102@naver.com'
+mailchimp-list: ''
+
+include: ["_pages"]
+permalink: /:title/
+
+# Plugins
+plugins: 
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-seo-tag
+  
+authors:
+  master:
+      name:           kim Yeonsu
+      site:           https://Kim-Yeonsu0102.github.io
+      avatar:         /assets/images/avatar1.jpg
+      bio:            "프론트엔드를 꿈꾸는 김연수 입니다."
+      email:          yeonsu_0102@naver.com
+      twitter:        
+
+
+# Defaults
+defaults:
+
+  # all posts
+  - scope:
+      path: "_posts"
+    values:
+      layout: post
+      author: master
+      avatar: /assets/images/avatar1.jpg
+      
+  # all pages
+  - scope:
+      path: "_pages"
+    values:
+      layout: page
+      
+# Syntax
+markdown: kramdown
+highlighter: rouge
+
+# Paginate
+paginate: 10
+
+
+
+# Exclude metadata and development time dependencies (like Grunt plugins)
+exclude: [AboutMe,Javascript,React,Sass,Css,Html,another,hobby]
+
+
+
+comments: false
