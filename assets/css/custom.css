@@ -1,15 +1,90 @@
-#AboutMe .aboutArea {
+#AboutMe-area{
+  background-color: var(--light);
+}
+
+#AboutMe-area .aboutArea {
   min-height: 400px;
   margin: 2rem 0 1rem;
   align-items: center;
-  flex-wrap: wrap;
+  
 }
-#AboutMe .aboutArea .aboutMe {
+#AboutMe-area .aboutArea .aboutPic {
+  text-align: center;
+}
+#AboutMe-area .aboutArea img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+#AboutMe-area .aboutArea .aboutMe {
   padding: 0 1rem;
 }
+#AboutMe-area .aboutArea .aboutMe h1 {
+  font-size: 1.8rem;
+  padding: 1rem 0;
+  color: var(--titleColor);
+  font-family: var(--titleFont);
+}
 
-@media (min-width: 576px) and (min-width: 768px) {
-  #AboutMe .aboutArea .aboutMe {
+#AboutMe-area .aboutArea .aboutMe a {
+  background: var(--gray);
+  color: #fff;
+  transition: 0.5s;
+}
+#AboutMe-area .aboutArea .aboutMe a:hover {
+  background: var(--titleColor);
+}
+
+#AboutMe-area .aboutArea .aboutMe .skillsec {
+text-align: center;
+  display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: space-around;
+    justify-content: center;
+    align-items: center;
+}
+  
+#AboutMe-area .aboutArea .aboutMe .skillsec .skill{
+  /* background: var(--lightblue); */
+  padding:0.8rem;
+  display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-end;
+    align-items: center;
+}
+.chart1{
+  height: 100px;
+    width: 100px;
+    display: block;
+  
+}
+
+
+
+
+
+
+
+
+/* 미디어쿼리 분기점  */
+
+@media (max-width: 768px) {
+  #AboutMe-area .aboutArea {
+    flex-wrap: wrap;
+  }
+  #AboutMe-area .aboutArea .aboutPic {
+    border-radius: 10px;
+  }
+
+  #AboutMe-area .aboutArea .aboutMe {
     text-align: center;
+    padding: 2rem 0;
+  }
+  #AboutMe-area .aboutArea .aboutMe h1 {
+    padding: 0.5rem 0;
+    font-size: 2rem;
   }
 }
