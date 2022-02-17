@@ -6,37 +6,23 @@ pagination:
 description: "이게뭘까 랄랄라"
 ---
 
+<div class="slide ">
+    <ul>
+      <li class=" animate__fadeIn animate__infinite animate__slow"></li>
+      <li class=" animate__fadeIn animate__infinite animate__slow "></li>
+      <li class=" animate__fadeIn animate__infinite animate__slow "></li>
+      <li class=" animate__fadeIn animate__infinite animate__slow "></li>
+    </ul>
+  </div>
 
-<div class="container-fluid">
+  {% include indexAboutMe.html %}
+ 
+<div class="container">
 
-    
+{% include skillChart.html %}
+ 
  <!-- Sticky - add sticky tag to the post you want to highlight here - tags: [sticky] -->
-<div class="container-fluid " id="AboutMe-area">
-
-    <div class="aboutArea d-flex justify-content-between container-fluid">
-        <div class="col-lg-4  col-md-4 col-sm-12 p-0 aboutPic" >	
-        <img src="/assets/images/YeonsuProfile.jpg" alt="Kim Yeon su">
-    </div>
- <div class="col-lg-8 col-md-8 col-sm-12 aboutMe">
-                
-                <h1>우리는 답을 찾을 것이다.<br/>늘 그랬듯이</h1>
-                <p class="aboutTxt">
-                    디자인을 전공 한 웹 개발 3년차 개발자 김연수 입니다.<br>
-                    전공을 살려 소비자가 보기에 Interactive 하지만 안정적인 사이트를 구축합니다.
-                </p>
-
-                {% include skillChart.html %}
-                
-
-
-
-
-                <a href="{{site.baseurl}}{{AboutMe.html}}" class="btn mt-4">About Me</a>
-            </div></div>   
-    
-</div> 
-
-   
+ 
     
 {% if page.url == "/" %}
     
@@ -54,7 +40,7 @@ description: "이게뭘까 랄랄라"
     <h2 class="h4 font-weight-bold">
     <a class="text-dark" href="{{site.baseurl}}{{latest_post.url}}">{{ latest_post.title }}</a>
     </h2>
-    <p class="excerpt">
+    <p class="excerpt  pb-2">
         {{ latest_post.excerpt | strip_html | strip_newlines | truncate: 136 }}
     </p>
     <div>
@@ -174,7 +160,7 @@ description: "이게뭘까 랄랄라"
    
     <div class="col-md-8 main-loop">
         
-        <h4 class="font-weight-bold spanborder"><span>All Stories</span></h4>
+        <h4 class="font-weight-bold spanborder"><span>All My Projects</span></h4>
         
 
         {% for post in paginator.posts %}

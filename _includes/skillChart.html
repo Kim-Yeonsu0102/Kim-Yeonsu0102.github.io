@@ -1,110 +1,141 @@
-<ul class="skillsec col-lg-12 col-md-12 col-sm-12">
-  <li class="skill col-lg-3 col-md-3 col-sm-3">
-    <div class="chart chart1">
-       
+
+
+<div id="skillSection" class="container-fluid pdtb">
+    
+
+    <p class="sec-title">My Skill List</p>
+    
+    
+          
+    
+    <ul class="skillsec col-12 d-flex justify-content-between no-gutters">
+      <li class="skill col-4 col-md-4  col-sm-6 no-gutters">
+        <div class="chart chart1"></div>
+        <span class="center">90%</span>
+        <span class="chartTit">HTML </span>
+      </li>
+      <li class="skill col-4 col-md-4  col-sm-6 no-gutters">
+        <div class="chart chart2"></div>
+        <span class="center">90%</span>
+        <span class="chartTit">CSS</span>
+      </li>
+      <li class="skill col-4 col-md-4  col-sm-6 no-gutters ">
+        <div class="chart chart3"></div>
+        <span class="center">70%</span>
+        <span class="chartTit">SASS</span>
+      </li>
+      <li class="skill col-4 col-md-4  col-sm-6 no-gutters">
+        <div class="chart chart4"></div>
+        <span class="center">80%</span>
+        <span class="chartTit">JavaScript</span>
+      </li>
+      <li class="skill col-4 col-md-4  col-sm-6 no-gutters">
+        <div class="chart chart5"></div>
+        <span class="center">80%</span>
+        <span class="chartTit">JQuery</span>
+      </li>
+      <li class="skill col-4 col-md-4  col-sm-6 no-gutters">
+        <div class="chart chart6"></div>
+        <span class="center">40%</span>
+        <span class="chartTit">React</span>
+      </li>
+      <li class="skill col-4 col-md-4  col-sm-6 no-gutters">
+        <div class="chart chart7"></div>
+        <span class="center">60%</span>
+        <span class="chartTit">Git</span>
+      </li>
+      <li class="skill col-4 col-md-4  col-sm-6 no-gutters">
+        <div class="chart chart8"></div>
+        <span class="center">95%</span>
+        <span class="chartTit">Design</span>
+      </li>
+    </ul>
+    
     </div>
     
-    <span class="center">90%</span>
-    <span class="title"><i class="fa-brands fa-html5 fa-sm animate__bounce"></i></span>
-  </li>
-  <li class="skill col-lg-3 col-md-3 col-sm-3">
-    <div class="chart chart2"></div>
-    <span class="center">90%</span>
-    <span class="title">CSS</span>
-  </li>
-  <li class="skill col-lg-3 col-md-3 col-sm-3">
-    <div class="chart chart3"></div>
-    <span class="center">70%</span>
-    <span class="title">SASS</span>
-  </li>
-  <li class="skill col-lg-3 col-md-3 col-sm-3">
-    <div class="chart chart4"></div>
-    <span class="center">80%</span>
-    <span class="title">JavaScript</span>
-  </li>
-  <li class="skill col-lg-3 col-md-3 col-sm-3">
-    <div class="chart chart5"></div>
-    <span class="center">80%</span>
-    <span class="title">JQuery</span>
-  </li>
-  <li class="skill col-lg-3 col-md-3 col-sm-3">
-    <div class="chart chart6"></div>
-    <span class="center">40%</span>
-    <span class="title">React</span>
-  </li>
-  <li class="skill col-lg-3 col-md-3 col-sm-3">
-    <div class="chart chart7"></div>
-    <span class="center">60%</span>
-    <span class="title">Git</span>
-  </li>
-  <li class="skill col-lg-3 col-md-3 col-sm-3">
-    <div class="chart chart8"></div>
-    <span class="center">95%</span>
-    <span class="title">Design</span>
-  </li>
-</ul>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-<script src="bower_components\jquery-circle-progress\dist\circle-progress.js"></script>
-
-<script>
-  $(document).ready(function () {
-    $(".chart").circleProgress({
-      startAngle: -Math.PI / 2,
-      //시작지점 (기본값 Math.PI)
-
-      animation: true,
-      //그래프가 그려지는 애니메이션 동작 여부
-      reverse: true,
-      //그래프가 반대방향으로 그려질지
-      thickness: 16,
-      //그래프두께
-      lineCap: "round",
-      //그래프 선 모양
-
-      //그래프 선 색
-      emptyFill: "rgba(0,0,0,0.3)",
-      //그래프 빈칸색 기본값
-      animationStartValue: 0,
-      //애니메이션 시작값
-      animation: { duration: 1600 },
-    });
-    $(".chart1").circleProgress({
-      value: 0.9,
-      fill: { gradient: ["#ff9f8e", "#ff1e41"] },
-    });
-    $(".chart2").circleProgress({
-      value: 0.9,
-      fill: { gradient: ["#ad6edd", "#7832e2"] },
-    });
-
-    $(".chart3").circleProgress({
-      value: 0.7,
-      fill: { gradient: ["#ff72bb", "#a90030"] },
-    });
-
-    $(".chart4").circleProgress({
-      value: 0.8,
-      fill: { gradient: ["#ffaa03", "#ff3603"] },
-    });
-
-    $(".chart5").circleProgress({
-      value: 0.8,
-      fill: { gradient: ["#fffc03", "#fbb500"] },
-    });
-
-    $(".chart6").circleProgress({
-      value: 0.4,
-      fill: { gradient: ["#03a9f4", "#3f51b5"] },
-    });
-  
-  $(".chart7").circleProgress({
-      value: 0.6,
-      fill: { gradient: ["#ffae97", "#83344a"] },
-    });
-    $(".chart8").circleProgress({
-      value: 0.95,
-      fill: { gradient: ["#7fd551", "#058b64"] },
-    });
-  });
-</script>
+    
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="bower_components\jquery-circle-progress\dist\circle-progress.js"></script>
+    
+    
+    
+    
+    
+    
+    <script>
+      
+      $(window).one('scroll', function () {
+        if($('body, html').scrollTop() >= 100 ){      
+        $(".chart").circleProgress({
+            
+            startAngle: -Math.PI / 2,
+            //시작지점 (기본값 Math.PI)
+      
+            animation: true,
+            //그래프가 그려지는 애니메이션 동작 여부
+            reverse: true,
+            //그래프가 반대방향으로 그려질지
+            thickness: 16,
+            //그래프두께
+            lineCap: "round",
+            //그래프 선 모양
+      
+            //그래프 선 색
+            emptyFill: "rgba(0,0,0,0.3)",
+            //그래프 빈칸색 기본값
+            animationStartValue: 0,
+            //애니메이션 시작값
+           
+            animation: { duration: 1600},
+            
+          });
+    
+    
+        $(".chart1").circleProgress({
+          value: 0.9,
+          fill: { gradient: ["#ff9f8e", "#ff1e41"] },
+        });
+        $(".chart2").circleProgress({
+          value: 0.9,
+          fill: { gradient: ["#ad6edd", "#7832e2"] },
+        });
+    
+        $(".chart3").circleProgress({
+          value: 0.7,
+          fill: { gradient: ["#ff72bb", "#a90030"] },
+        });
+    
+        $(".chart4").circleProgress({
+          value: 0.8,
+          fill: { gradient: ["#ffaa03", "#ff3603"] },
+        });
+    
+        $(".chart5").circleProgress({
+          value: 0.8,
+          fill: { gradient: ["#fffc03", "#fbb500"] },
+        });
+    
+        $(".chart6").circleProgress({
+          value: 0.4,
+          fill: { gradient: ["#03a9f4", "#3f51b5"] },
+        });
+      
+      $(".chart7").circleProgress({
+          value: 0.6,
+          fill: { gradient: ["#ffae97", "#83344a"] },
+        });
+        $(".chart8").circleProgress({
+          value: 0.95,
+          fill: { gradient: ["#7fd551", "#058b64"] },
+        });
+    }
+    
+      });
+    
+     
+    
+    
+    </script>
+    

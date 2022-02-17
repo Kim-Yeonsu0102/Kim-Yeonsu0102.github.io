@@ -55,7 +55,7 @@ paginate: 10
 
 
 # Exclude metadata and development time dependencies (like Grunt plugins)
-exclude: [AboutMe,Javascript,React,Sass,Css,Html,another,hobby]
+exclude: [AboutMe,Javascript,React,Sass,Css,Html,another,hobby,Design]
 
 
 
