@@ -1,9 +1,18 @@
+# locale                   : "ko-KR"
+
+domain: Kim-Yeonsu0102.github.io       
+# if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
+url: https://Kim-Yeonsu0102.github.io  
+# the base hostname and protocol for your site, e.g. http://example.com
+baseurl: 
+
+
 # Site
 name: '김연수 포트폴리오'
 description: '김연수의 포트폴리오에 오신것을 환영합니다.'
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/favicon.ico'
-baseurl: 
+
 disqus: 'portfolio'
 email: 'yeonsu_0102@naver.com'
 mailchimp-list: ''
@@ -60,3 +69,4 @@ exclude: [AboutMe,Javascript,React,Sass,Css,Html,another,hobby]
 
 
 comments: false
+
