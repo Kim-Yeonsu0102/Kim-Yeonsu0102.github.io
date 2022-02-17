@@ -10,42 +10,42 @@
         
   
   <ul class="skillsec col-12 d-flex justify-content-between no-gutters">
-    <li class="skill col-4 col-md-4  col-sm-6 no-gutters">
+    <li class="skill col-3 col-md-4  col-sm-6 no-gutters">
       <div class="chart chart1"></div>
       <span class="center">90%</span>
       <span class="chartTit">HTML </span>
     </li>
-    <li class="skill col-4 col-md-4  col-sm-6 no-gutters">
+    <li class="skill col-3 col-md-4  col-sm-6 no-gutters">
       <div class="chart chart2"></div>
       <span class="center">90%</span>
       <span class="chartTit">CSS</span>
     </li>
-    <li class="skill col-4 col-md-4  col-sm-6 no-gutters ">
+    <li class="skill col-3 col-md-4  col-sm-6 no-gutters ">
       <div class="chart chart3"></div>
       <span class="center">70%</span>
       <span class="chartTit">SASS</span>
     </li>
-    <li class="skill col-4 col-md-4  col-sm-6 no-gutters">
+    <li class="skill col-3 col-md-4  col-sm-6 no-gutters">
       <div class="chart chart4"></div>
       <span class="center">80%</span>
       <span class="chartTit">JavaScript</span>
     </li>
-    <li class="skill col-4 col-md-4  col-sm-6 no-gutters">
+    <li class="skill col-3 col-md-4  col-sm-6 no-gutters">
       <div class="chart chart5"></div>
       <span class="center">80%</span>
       <span class="chartTit">JQuery</span>
     </li>
-    <li class="skill col-4 col-md-4  col-sm-6 no-gutters">
+    <li class="skill col-3 col-md-4  col-sm-6 no-gutters">
       <div class="chart chart6"></div>
       <span class="center">40%</span>
       <span class="chartTit">React</span>
     </li>
-    <li class="skill col-4 col-md-4  col-sm-6 no-gutters">
+    <li class="skill col-3 col-md-4  col-sm-6 no-gutters">
       <div class="chart chart7"></div>
       <span class="center">60%</span>
       <span class="chartTit">Git</span>
     </li>
-    <li class="skill col-4 col-md-4  col-sm-6 no-gutters">
+    <li class="skill col-3 col-md-4  col-sm-6 no-gutters">
       <div class="chart chart8"></div>
       <span class="center">95%</span>
       <span class="chartTit">Design</span>
@@ -68,7 +68,7 @@
   <script>
     
     $(window).one('scroll', function () {
-          
+      if($('body, html').scrollTop() >= 50 ){ 
       $(".chart").circleProgress({
           
           startAngle: -Math.PI / 2,
@@ -93,7 +93,7 @@
           
         });
   
-  
+      }
       $(".chart1").circleProgress({
         value: 0.9,
         fill: { gradient: ["#ff9f8e", "#ff1e41"] },
@@ -135,7 +135,7 @@
   
     });
   
-  //   if($('body, html').scrollTop() >= 100 ){ 
+  //  
   // }
   
   
