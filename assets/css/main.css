@@ -57,7 +57,7 @@
   --font-family-sans-serif: 'Noto Sans KR', "Helvetica Neue", "Arial";
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; 
   --titleFont: 'HoengseongHanu';
-  --titleColor: linear-gradient( 90deg, #f0402d, #ff977a );
+  --titleColor: linear-gradient( 180deg, #f0402d, #ff977a );
 
 }
 
