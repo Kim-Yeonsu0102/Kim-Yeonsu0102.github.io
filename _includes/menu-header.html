@@ -57,8 +57,8 @@
 
 <style>
   @media (max-width: 991px) {
-    #MagicMenu {
-      background-color: var(--dark);
+    #MagicMenu, .bg-transparent {
+      background: linear-gradient(180deg, black, #7d188e) ;
     }
   }
 </style>
@@ -81,11 +81,11 @@ $(document).ready(function () {
         }
         });
 
-        if ($("#index").hasClass("active")) {
+        if ($("#index").hasClass("active")|| $("#index #Skill").hasClass("active")) {
         console.log("index")
         $("#MagicMenu")  
           .removeClass("bg-dark d-block")        
-          .addClass("fixed-top bg-transparent"); 
+          .addClass("fixed-top bg-transparent").css('color','#fff'); 
                 
       }else{
         $("#MagicMenu")       
@@ -94,6 +94,9 @@ $(document).ready(function () {
             
 
       }
+
+     
+      
 
      
 });

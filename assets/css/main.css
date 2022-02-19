@@ -58,6 +58,8 @@
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; 
   --titleFont: 'HoengseongHanu';
   --titleColor: linear-gradient( 180deg, #f0402d, #ff977a );
+--navDark : linear-gradient(45deg, black, #4e2170) ;
+
 
 }
 
@@ -3343,6 +3345,12 @@ input[type="button"].btn-block {
     justify-content: space-between;
     margin: 0 auto; }
 
+
+.nav-down{
+  background:var(--navDark);
+}
+
+
 .navbar-brand {
   display: inline-block;
   padding-top: 0.68rem;
@@ -5118,7 +5126,7 @@ button.bg-light:focus {
   background-color: #dae0e5 !important; }
 
 .bg-dark {
-  background-color: #212529 !important; }
+  background: linear-gradient(45deg, black, #7d188e) !important; }
 
 a.bg-dark:hover, a.bg-dark:focus,
 button.bg-dark:hover,

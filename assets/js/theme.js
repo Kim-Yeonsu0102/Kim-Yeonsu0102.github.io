@@ -42,11 +42,40 @@
            
         } else {
             // Scroll Up
-            if(st + $(window).height() < $(document).height()) {               
+            if(st + $(window).height() < $(document).height()) {     
+                       
                 $('nav').removeClass('nav-up').addClass('nav-down');
-                $('.nav-up, .nav-down').css('top', '0px');             
+                $('.nav-up, .nav-down').css('top', '0px');
             }
         }
+
+
+
+        if (matchMedia("screen and (min-width: 992px)").matches) {
+            if(scrollY == 0){
+                // $('nav').removeClass('nav-down');
+            $('.nav-down').css({           
+                "background": "none",
+                "transition": "all 0.55s ease"
+              });
+            }else{
+                $('.nav-down').css({           
+                  "background": "linear-gradient(180deg, black, #4e2170)",
+                  "transition": "all 0.55s ease"
+                });
+            
+            }
+              
+        }else{
+            $('.nav-down').css({           
+              "background": "linear-gradient(45deg, black, #7d188e)",
+              "transition": "all 0.55s ease"
+            });
+        
+        }
+          
+
+        
 
         lastScrollTop = st;
     }
