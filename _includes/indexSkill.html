@@ -1,47 +1,50 @@
 
-<div class="bgFixed container-fluid  pdtb">
 
-<div id="skillSection" class="container-fluid pdtb ">
+<div id="skillSection">
     
-  <p class="sec-title">My Skill List</p>
+
+  <p class="sec-title pdtb">My Skill List</p>
   
-  <ul class="skillsec col-12 d-flex justify-content-between no-gutters">
-    <li class="skill col-3 col-md-3  col-sm-6 no-gutters">
+  
+        
+  
+  <ul class=" container-fluid skillsec col-12 d-flex justify-content-between no-gutters">
+    <li class="skill col-md-4  col-sm-6 col-6 col-lg-3 no-gutters">
       <div class="chart chart1"></div>
       <span class="center">90%</span>
       <span class="chartTit">HTML </span>
     </li>
-    <li class="skill col-3 col-md-3  col-sm-6 no-gutters">
+    <li class="skill col-md-4  col-sm-6 col-6 col-lg-3 no-gutters">
       <div class="chart chart2"></div>
       <span class="center">90%</span>
       <span class="chartTit">CSS</span>
     </li>
-    <li class="skill col-3 col-md-3  col-sm-6 no-gutters ">
+    <li class="skill col-md-4  col-sm-6 col-6 col-lg-3 no-gutters ">
       <div class="chart chart3"></div>
       <span class="center">70%</span>
       <span class="chartTit">SASS</span>
     </li>
-    <li class="skill col-3 col-md-3  col-sm-6 no-gutters">
+    <li class="skill col-md-4  col-sm-6 col-6 col-lg-3 no-gutters">
       <div class="chart chart4"></div>
       <span class="center">80%</span>
       <span class="chartTit">JavaScript</span>
     </li>
-    <li class="skill col-3 col-md-3  col-sm-6 no-gutters">
+    <li class="skill col-md-4  col-sm-6 col-6 col-lg-3 no-gutters">
       <div class="chart chart5"></div>
       <span class="center">80%</span>
       <span class="chartTit">JQuery</span>
     </li>
-    <li class="skill col-3 col-md-3  col-sm-6 no-gutters">
+    <li class="skill col-md-4  col-sm-6 col-6 col-lg-3 no-gutters">
       <div class="chart chart6"></div>
       <span class="center">40%</span>
       <span class="chartTit">React</span>
     </li>
-    <li class="skill col-3 col-md-3  col-sm-6 no-gutters">
+    <li class="skill col-md-4  col-sm-6 col-6 col-lg-3 no-gutters">
       <div class="chart chart7"></div>
       <span class="center">60%</span>
       <span class="chartTit">Git</span>
     </li>
-    <li class="skill col-3 col-md-3  col-sm-6 no-gutters footer">
+    <li class="skill col-md-4  col-sm-6 col-6 col-lg-3 no-gutters">
       <div class="chart chart8"></div>
       <span class="center">95%</span>
       <span class="chartTit">Design</span>
@@ -50,11 +53,8 @@
   
   </div>
   
-</div>
-
-
-
-
+  
+  
   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script src="bower_components\jquery-circle-progress\dist\circle-progress.js"></script>
@@ -66,8 +66,8 @@
   
   <script>
     
-$(document).ready(function () {
-     
+    $(window).ready(function () {
+          
       $(".chart").circleProgress({
           
           startAngle: -Math.PI / 2,
@@ -130,12 +130,13 @@ $(document).ready(function () {
         value: 0.95,
         fill: { gradient: ["#7fd551", "#058b64"] },
       });
-});
   
-   
+  
+    });
+  
+  //   if($('body, html').scrollTop() >= 100 ){ 
+  // }
   
   
   </script>
-
-
-
+  

@@ -46,14 +46,14 @@
 <body class="{% if page.url == "/" %} homefirstpage {% endif %}">
 
     <!-- Navbar -->
-    <nav id="MagicMenu" class="topnav navbar navbar-expand-lg navbar-light fixed-top">
+    <nav id="MagicMenu" class="topnav navbar navbar-dark navbar-expand-lg bg-dark d-block">
     <div class="container">
-        <a class="navbar-brand" href="{{ site.baseurl }}/index.html"><strong>{{site.name}}</strong></a>
+        <a class="navbar-brand" href="{{ site.baseurl }}/index.html"><strong><img src="../assets/images/logo.png" alt="김연수 포트폴리오"></strong></a>
         <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="navbar-collapse collapse" id="navbarColor02" style="">
-            <ul class="navbar-nav mr-auto d-flex align-items-center">
+        <div class="navbar-dark navbar-collapse collapse" id="navbarColor02" style="">
+            <ul class=" navbar-nav mr-auto d-flex align-items-center">
                {% include menu-header.html %}
             </ul>
             <ul class="navbar-nav ml-auto d-flex align-items-center">

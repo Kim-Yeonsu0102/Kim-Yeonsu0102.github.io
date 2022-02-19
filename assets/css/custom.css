@@ -17,18 +17,20 @@
 
 
 .slide {
-	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background: linear-gradient(-45deg, #000, #c705b0, #005ba9, #000000);
 	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
-	height: 680px;
+	animation: gradient 40s ease infinite;
 }
 
 @keyframes gradient {
 	0% {
 		background-position: 0% 50%;
 	}
-	50% {
-		background-position: 100% 50%;
+	35% {
+		background-position: 100% 100%;
+	}
+  75% {
+		background-position: 100% 100%;
 	}
 	100% {
 		background-position: 0% 50%;
@@ -36,7 +38,21 @@
 }
 
 
+@keyframes fly {
+  
+  0% {
+		bottom: 3%;
+	}
+  50%{
+    bottom:-1%;
+  }
+  100% {
+    bottom:3%;
+    }
 
+
+ 
+}
 
 
 
@@ -47,25 +63,31 @@
   height: 100%;
   /* background: var(--titleColor); */
   display: fixed;
+  
 }
 .aboutArea {
-  min-height: 400px;
+  margin-top:40px; 
+  height:480px;
   align-items: center;
 }
 .aboutArea .aboutPic {
   margin: 2rem 0 1rem;
   text-align: center;
-}
-.aboutArea img {
   width: 300px;
   height: 300px;
-  border-radius: 50%;
+  /* border-radius: 50%; */
+  overflow: hidden;
+  animation: fly 5s ease infinite;
+}
+.aboutArea img {
+  width: 100%
+ 
 }
 .aboutArea .aboutMe {
   padding: 0 1rem;
 }
 .aboutMe h1 {
-  font-size: 2.3rem;
+  font-size: 3rem;
   padding: 1rem 0;
   color:#fff;
   font-family: var(--titleFont);
@@ -122,21 +144,28 @@
   }
 
   .sec-title {
-    font-size: 2rem;
+    font-size:1rem 0 3rem;
   }
 
   #AboutMe-area .aboutArea {
     flex-wrap: wrap;
+    height: 700px;
+    margin-top:80px;
+    justify-content: center !important;
   }
-  #AboutMe-area .aboutArea .aboutPic {
-    border-radius: 10px;
-  }
+  /* #AboutMe-area .aboutArea .aboutPic {
+    
+  } */
 
   #AboutMe-area .aboutArea .aboutMe {
     text-align: center;
-    padding: 2rem 0;
+    padding: 1rem 0 2rem;
+    align-self: flex-start;
+
+  
+  
   }
-  h1 {
+  .aboutMe h1 {
     padding: 0.5rem 0;
     font-size: 2rem;
   }
@@ -157,14 +186,15 @@ figure.snip1477 {
   
   position: relative;
   overflow: hidden;
-  margin: 10px;
-  min-width: 300px;
+  margin: 10px auto;
+  min-width: 250px;
   max-width: 300px;
   width: 100%;
   color: #ffffff;
   text-align: center;
   font-size: 16px;
-  background-color: #000000;
+ 
+  
 }
 figure.snip1477 *,
 figure.snip1477 *:before,

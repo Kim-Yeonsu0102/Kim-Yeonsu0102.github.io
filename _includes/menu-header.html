@@ -1,21 +1,102 @@
 <!--  Replace menu links here -->
 
 <li class="nav-item">
-<a class="nav-link" href="{{site.baseurl}}/index.html" id="index" target="_self">Home</a>
+  <a
+    class="nav-link"
+    href="{{site.baseurl}}/index.html"
+    id="index"
+    target="_self"
+    >Home</a
+  >
 </li>
 <li class="nav-item">
-<a class="nav-link" href="{{site.baseurl}}/Skill.html" id="Skill" target="_self">Skill</a>
+  <a
+    class="nav-link"
+    href="{{site.baseurl}}/Skill.html"
+    id="Skill"
+    target="_self"
+    >Skill</a
+  >
 </li>
 <li class="nav-item">
-<a class="nav-link" href="{{site.baseurl}}/AboutMe.html" id="AboutMe" target="_self">AboutMe</a>
+  <a
+    class="nav-link"
+    href="{{site.baseurl}}/AboutMe.html"
+    id="AboutMe"
+    target="_self"
+    >AboutMe</a
+  >
 </li>
 <li class="nav-item">
-<a class="nav-link" href="{{site.baseurl}}/Projects.html" id="Projects" target="_self">Projects</a>
+  <a
+    class="nav-link"
+    href="{{site.baseurl}}/Projects.html"
+    id="Projects"
+    target="_self"
+    >Projects</a
+  >
 </li>
 <li class="nav-item">
-<a class="nav-link" href="{{site.baseurl}}/Contact.html" id="Contact" target="_self">Contact</a>
+  <a
+    class="nav-link"
+    href="{{site.baseurl}}/Contact.html"
+    id="Contact"
+    target="_self"
+    >Contact</a
+  >
 </li>
 <li class="nav-item">
-<a class="nav-link" href="{{site.baseurl}}/Hobby.html" target="_self" >Hobby</a>
+  <a
+    class="nav-link"
+    href="{{site.baseurl}}/Hobby.html"
+    id="Hobby"
+    target="_self"
+    >Hobby</a
+  >
 </li>
 
+<style>
+  @media (max-width: 991px) {
+    #MagicMenu {
+      background-color: var(--dark);
+    }
+  }
+</style>
+
+<script>
+
+
+
+$(document).ready(function () {
+
+
+
+
+      var url = window.location.pathname,
+      urlRegExp = new RegExp(url.replace(/\/$/, '') + "$");
+
+      $('a').each(function(){
+        if (urlRegExp.test(this.href.replace(/\/$/, ''))) {
+           $(this).addClass('active');
+        }
+        });
+
+        if ($("#index").hasClass("active")) {
+        console.log("index")
+        $("#MagicMenu")  
+          .removeClass("bg-dark d-block")        
+          .addClass("fixed-top bg-transparent"); 
+                
+      }else{
+        $("#MagicMenu")       
+          .removeClass("fixed-top bg-transparent")   
+          .addClass("bg-dark d-block")
+            
+
+      }
+
+     
+});
+
+  
+</script>
