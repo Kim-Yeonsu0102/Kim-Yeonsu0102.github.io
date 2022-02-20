@@ -67,7 +67,13 @@
   <script>
     
     $(window).ready(function () {
-          
+
+
+      $(window).scroll(function() {
+        if ($('#skillSection').scrollTop() >= Math.ceil($('#skillSection').offset().top)) {
+
+      
+     
       $(".chart").circleProgress({
           
           startAngle: -Math.PI / 2,
@@ -130,7 +136,10 @@
         value: 0.95,
         fill: { gradient: ["#7fd551", "#058b64"] },
       });
-  
+    } else {
+
+}
+});
   
     });
   

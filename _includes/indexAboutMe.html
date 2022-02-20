@@ -1,10 +1,7 @@
 <link rel="stylesheet" href="../assets/css/particle.css" />
 
 <div class="slide">
-  <div
-    class="no-gutters d-flex justify-content-center align-items-center"
-    id="AboutMe-area"
-  >
+  <div class="no-gutters d-flex justify-content-center align-items-center" id="AboutMe-area">
     <div class="page-bg"></div>
 
     <div class="animation-wrapper">
@@ -25,9 +22,7 @@
             </div>
           </div>
           <figcaption>
-            <span class="large material-icons">
-              rocket_launch
-              </span>
+            <span class="large material-icons"> rocket_launch </span>
             <p>프론트 엔드를 꿈꾸는 긍정파워 김연수 입니다!</p>
           </figcaption>
           <a href="/AboutMe.html"></a>
@@ -35,11 +30,37 @@
       </div>
 
       <div class="col-lg-7 col-md-7 col-sm-12 aboutMe">
-        <h1>우린 방법을 찾을 것이다.<br />늘 그래왔듯이..</h1>
+        <h1 id="typing"></h1>
         <p class="aboutTxt">
-          안되면 되게하라<br>
-          디자인을 전공 한 웹 개발자 김연수 입니다.</p>
+          안되면 되게하라<br />
+          디자인을 전공 한 웹 개발자 김연수 입니다.
+        </p>
       </div>
     </div>
   </div>
 </div>
+
+
+
+<script>
+
+var typing = document.getElementById('typing');
+var typewriter = new Typewriter(typing, {
+    loop: true
+});
+
+typewriter
+    .typeString('우리는 답을 찾을 것이다.')
+    .pauseFor(1500)       
+      .typeString('<br/>')
+    .typeString('늘 그래왔듯이..')
+    .pauseFor(4000)
+        .deleteAll()                        
+        //.typeString('<br/>') 
+    .typeString('안녕하세요.')
+    .pauseFor(1000)
+    .typeString('<br/>')     
+    .typeString('김연수 입니다.')
+    .pauseFor(4000)
+    .start();
+</script>

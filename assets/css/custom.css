@@ -2,15 +2,63 @@
   padding: 3rem 0;
 }
 
+.sectionBar{
+  background:#fff;
+  padding:5px 0 20px; 
+}
+
 .sec-title {
   font-size: 3rem;
   text-align: center;  
-  font-family: var(--titleFont);
+  font-family: var(--secTitFont);
   font-size: 3rem;   
-  color: #fff;
-  background: var(--gray);
-  padding:5px 0; 
+  
+  padding: 0.25em 0 0.325em;
+  display: block;
+  margin: 0 auto;
+  text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
+  /* Clip Background Image */
+  background: url(/assets/images/animated-text-fill.png) repeat-y;
+  -webkit-background-clip: text;
+  background-clip: text;
+  /* Animate Background Image */
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: aitf 80s linear infinite;
+  /* Activate hardware acceleration for smoother animations */
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
 }
+
+
+
+/* Animate Background Image */
+@-webkit-keyframes aitf {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+
+.sec-text{
+  text-align: left;
+  line-height: 1.6;
+  font-size: 1rem;
+  color: #555;
+  
+}
+.sec-text > span{
+  display: block;
+}
+
+.sec-text .material-icons{
+  font-size:1rem;
+  margin-right:10px;
+}
+.sec-text> span:nth-child(even) .material-icons{color:#2196f3}
+.sec-text> span:nth-child(odd) .material-icons{color:#df594f}
 
 /*슬라이드*/
 
@@ -87,14 +135,18 @@
   padding: 0 1rem;
 }
 .aboutMe h1 {
-  font-size: 3rem;
-  padding: 1rem 0;
+  font-size:3rem;
+  
   color:#fff;
   font-family: var(--titleFont);
+  min-height: 130px;
+
 }
 
+
 .aboutTxt{
-  color:#fff;
+  color:#ccc;
+  padding: 0 1rem;
 }
 
 
@@ -102,30 +154,18 @@
 /*스킬 리스트*/
 
 #skillSection{
-  text-align: center;
-  background:#f2f2f2;
+  background:#333;
+  text-align: center; 
   padding-bottom: 60px;
 }
 #skillSection .container-fluid {
 margin: 1rem auto;
 }
 
-.sec-text{
-  padding-top: 24px;
-  text-align: left;
-  line-height: 1.8;
-  font-size: 16px;
-  color: #607d8b;
-  letter-spacing: 0.4px;
-  font-weight: 500;
-}
-
-
-
 
 
 .skillsec {
- padding-top:40px;
+ 
   text-align: left;
   display: flex;
   flex-direction: column;
@@ -161,7 +201,7 @@ margin: 1rem auto;
   padding: 4px 10px;
   border-radius: 4px;
   text-align: center;
-  letter-spacing: 10px;
+  letter-spacing: 0.5rem;
   font-weight: 400;
   font-family: var(--titleFont);
 }
@@ -173,7 +213,7 @@ margin: 1rem auto;
   padding: 4px 10px;
   border-radius: 4px;
   text-align: center;
-  letter-spacing: 10px;
+  letter-spacing: 0.5rem;
   font-weight: 400;
   font-family: var(--titleFont);
   
@@ -190,7 +230,7 @@ display: block;
 font-family: var(--titleFont);
 font-size: 25px;
 font-weight: 600;
-color:#313131;
+color:#fff;
 text-align: right;
 }
 .skBar{
@@ -200,6 +240,10 @@ text-align: right;
 /*main picture earth(It's me) CSS*/
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,500,700);
 @import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+
+
+
+
 figure.snip1477 {
   
   position: relative;
@@ -355,8 +399,8 @@ figure.snip1477.hover figcaption {
   }
 
   .sec-title {
-    padding:1rem 0 0;
-    font-size: 2rem;
+    padding: 0.5rem 0 ;
+
   }
 
   #AboutMe-area .aboutArea {
@@ -379,13 +423,11 @@ figure.snip1477.hover figcaption {
   }
   .aboutMe h1 {
     padding: 0.5rem 0;
-    font-size: 2rem;
+    font-size: 2.4rem;
+    min-height: 110px;
   }
 
 
-i{
-  font-size:14px;
-}
 
 
   #skillSection .container-fluid{
