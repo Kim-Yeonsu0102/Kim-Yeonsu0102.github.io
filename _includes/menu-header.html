@@ -1,51 +1,21 @@
 <!--  Replace menu links here -->
 
 <li class="nav-item">
-  <a
-    class="nav-link"
-    href="{{site.baseurl}}/index.html"
-    id="index"
-    target="_self"
-    >Home</a
-  >
+  <a class="nav-link" href="{{site.baseurl}}/index.html" id="index" target="_self">Home</a>
 </li>
 <li class="nav-item">
-  <a
-    class="nav-link"
-    href="#AboutMe-area"
-    id="AboutMe"
-    target="_self"
-    >AboutMe</a
-  >
+  <a class="nav-link " href="{{site.baseurl}}/index.html #AboutMe-area" id="AboutMe" target="_self">AboutMe</a>
 </li>
 
 <li class="nav-item">
-  <a
-    class="nav-link"
-    href="#skillSection"
-    id="Skill"
-    target="_self"
-    >Skill</a
-  >
+  <a class="nav-link" href="{{site.baseurl}}/index.html #skillSection" id="Skill" target="_self">Skill</a>
 </li>
 
 <li class="nav-item">
-  <a
-    class="nav-link"
-    href="{{site.baseurl}}/Projects.html"
-    id="Projects"
-    target="_self"
-    >Projects</a
-  >
+  <a class="nav-link" href="{{site.baseurl}}/Projects.html" id="Projects" target="_self">Projects</a>
 </li>
 <li class="nav-item">
-  <a
-    class="nav-link"
-    href="{{site.baseurl}}/Contact.html"
-    id="Contact"
-    target="_self"
-    >Contact</a
-  >
+  <a class="nav-link" href="{{site.baseurl}}/Contact.html" id="Contact" target="_self">Contact</a>
 </li>
 <!-- <li class="nav-item">
   <a
@@ -59,49 +29,66 @@
 
 <style>
   @media (max-width: 991px) {
-    #MagicMenu, .bg-transparent {
-      background: linear-gradient(180deg, black, #7d188e) ;
+
+    #MagicMenu,
+    .bg-transparent {
+      background: linear-gradient(180deg, black, #7d188e);
     }
   }
+
 </style>
 
 <script>
 
 
 
-$(document).ready(function () {
+  $(document).ready(function () {
+
+    if (window.location.href == 'Kim-Yeonsu0102.github.io') {
+      console.log('hi')
+      $('a').removeClass('active');
+      $("#MagicMenu")
+        .removeClass("bg-dark d-block")
+        .addClass("fixed-top bg-transparent").css('color', '#fff');
+    }
 
 
 
 
-      var url = window.location.pathname,
+
+
+    var url = window.location.pathname,
       urlRegExp = new RegExp(url.replace(/\/$/, '') + "$");
 
-      $('a').each(function(){
-        if (urlRegExp.test(this.href.replace(/\/$/, ''))) {
-           $(this).addClass('active');
-        }
-        });
+    $('a').each(function () {
 
-        if ($("#index").hasClass("active")|| $("#index #Skill").hasClass("active")) {
-        console.log("index")
-        $("#MagicMenu")  
-          .removeClass("bg-dark d-block")        
-          .addClass("fixed-top bg-transparent").css('color','#fff'); 
-                
-      }else{
-        $("#MagicMenu")       
-          .removeClass("fixed-top bg-transparent")   
-          .addClass("bg-dark d-block")
-            
 
+
+      if (urlRegExp.test(this.href.replace(/\/$/, ''))) {
+        $(this).addClass('active');
       }
+    });
 
-     
-      
+    if ($("#Projects ").hasClass("active")) {
+      console.log("index")
+      $("#MagicMenu")
+        .removeClass("fixed-top bg-transparent")
+        .addClass("bg-dark d-block")
+        .css('color', '#fff');
 
-     
-});
+    }
+    else {
+      console.log("Hi")
+      $("#MagicMenu")
+        .removeClass("bg-dark d-block")
+        .addClass("fixed-top bg-transparent").css('color', '#fff');
 
-  
+    }
+
+
+
+
+  });
+
+
 </script>
