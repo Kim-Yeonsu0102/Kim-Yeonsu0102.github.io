@@ -1,9 +1,9 @@
 <!--  Replace menu links here -->
 
-<li class="nav-item ">
+<li class="nav-item">
   <a class="nav-link click" href="{{site.baseurl}}/index.html" name="index-area" id="index" target="_self">Home</a>
 </li>
-<li class="nav-item ">
+<li class="nav-item">
   <a class="nav-link click" href="{{site.baseurl}}/index.html#AboutMeArea" name="AboutMeArea" id="AboutMe" target="_self">AboutMe</a>
 </li>
 
@@ -12,10 +12,10 @@
 </li>
 
 <li class="nav-item">
-  <a class="nav-link" href="{{site.baseurl}}/Projects.html" id="Projects" target="_self">Projects</a>
+  <a class="nav-link" href="{{site.baseurl}}/Projects.html" name="Projects" id="Projects" target="_self">Projects</a>
 </li>
 <li class="nav-item">
-  <a class="nav-link" href="{{site.baseurl}}/Contact.html" id="Contact" target="_self">Contact</a>
+  <a class="nav-link" href="{{site.baseurl}}/Contact.html" name="Contact" id="Contact" target="_self">Contact</a>
 </li>
 <!-- <li class="nav-item">
   <a
@@ -29,116 +29,82 @@
 
 <style>
   @media (max-width: 991px) {
-
     #MagicMenu,
     .bg-transparent {
       background: linear-gradient(180deg, black, #7d188e);
     }
   }
-
 </style>
 
 <script>
-
-
-
-
   $(document).ready(function () {
 
+
     var url = window.location.pathname,
-      urlRegExp = new RegExp(url.replace(/\/$/, '') + "$");
+      urlRegExp = new RegExp(url.replace(/\/$/, "") + "$");
 
-    $('a').each(function () {
-
-
-
-
-      if (urlRegExp.test(this.href.replace(/\/$/, ''))) {
-        $(this).addClass('active');
+    $("a").each(function () {
+      if (urlRegExp.test(this.href.replace(/\/$/, ""))) {
+        $(this).addClass("active");
       }
 
 
 
 
-      if ($("#Projects ").hasClass("active")) {
+      if ($("#index").hasClass("active")&&$("#Projects").hasClass("active") ) {
+        console.log("인덱스에 집중");
 
-        $("#MagicMenu")
-          .removeClass("fixed-top bg-transparent")
-          .addClass("bg-dark d-block")
-          .css('color', '#fff');
+        $("#AboutMe, #Skill, #Projects").removeClass("active");
 
+        $("#MagicMenu").removeClass("bg-dark d-block").addClass("fixed-top bg-transparent").css("color", "#ccc");
+      } else if ($("#Projects ").hasClass("active")) {
+        console.log("프로젝트 켜짐 ");
+        
+        $("#MagicMenu").removeClass("fixed-top bg-transparent").addClass("bg-dark d-block");
       }
-      if ($("#index-area ").hasClass("active")) {
-        console.log("index다")
-        $("#MagicMenu")
-          .removeClass("bg-dark d-block")
-          .addClass("fixed-top bg-transparent")
-
-      }
-
-
-
-
-
-
     });
 
-
+    
     
 
-    $('#AboutMe').click(function () {
-      $(this).attr('AboutMeArea', name).addClass('active')
-      $('#index').removeClass('active')
+    $("#AboutMe").click(function () {
 
-      let $aboutAct = $(this).attr('AboutMeArea', name).hasClass('active')
-
-      $(this).attr('AboutMeArea', name).addClass('active')
-      if ($aboutAct) {
-        $(this).attr('AboutMeArea', name).removeClass('active')
-      } else {
-        $(this).attr('AboutMeArea', name).addClass('active')
+      
+      if($("#index").attr("index-area", name).hasClass("active")){
+        $("#index").attr("index-area", name).removeClass("active")
       }
 
+      $("#index, #Skill, #Projects").removeClass("active");
+      $(this).attr("AboutMeArea", name).addClass("active");
+      
 
-      let $clickE = $('#universeMe').hasClass("d-none");
+      let $aboutAct = $(this).attr("AboutMeArea", name).hasClass("active");
+    
+
+   
+      let $clickE = $("#universeMe").hasClass("d-none");
 
       if ($clickE) {
-        $('#universeMe').removeClass("d-none")
-
-      } else if(!$clickE && !$aboutAct){
-        $('#universeMe').addClass("d-none")
-      }else{
-
+        $("#universeMe").removeClass("d-none");
+      } else if (!$clickE && !$aboutAct) {
+        $("#universeMe").addClass("d-none");
+      } else {
       }
-    })
+    });
 
+    $("#Skill").click(function () {
+      $("#index, #AboutMe, #Projects").removeClass("active");      
+      $(this).attr("skillSection", name).addClass("active");
+     
 
-
-
-
-
-    $('#Skill').click(function () {
-      $(this).attr('skillSection', name).addClass('active')
-
-
-      let $skillAct = $(this).attr('skillSection', name).hasClass('active')
+      let $skillAct = $(this).attr("skillSection", name).hasClass("active");
+     
 
       if ($skillAct) {
-        $(this).attr('skillSection', name).removeClass('active')
-
+        $(this).attr("skillSection", name).removeClass("active");
       } else {
-        $(this).attr('skillSection', name).add('active')
-
+        $(this).attr("skillSection", name).add("active");
       }
-
-
-
-    })
-
-
-
-
+    });
   });
-
-
 </script>
