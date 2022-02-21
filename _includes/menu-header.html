@@ -1,18 +1,18 @@
 <!--  Replace menu links here -->
 
-<li class="nav-item">
-  <a class="nav-link" href="{{site.baseurl}}/index.html" id="index" target="_self">Home</a>
+<li class="nav-item ">
+  <a class="nav-link click" href="{{site.baseurl}}/index.html" name="index-area" id="index" target="_self">Home</a>
 </li>
-<li class="nav-item">
-  <a class="nav-link " href="{{site.baseurl}}/index.html#slide" name="slide"  id="AboutMe" target="_self">AboutMe</a>
-</li>
-
-<li class="nav-item">
-  <a class="nav-link" href="{{site.baseurl}}/index.html#skillSection" name="skillSection"  id="Skill" target="_self">Skill</a>
+<li class="nav-item ">
+  <a class="nav-link click" href="{{site.baseurl}}/index.html#AboutMeArea" name="AboutMeArea" id="AboutMe" target="_self">AboutMe</a>
 </li>
 
 <li class="nav-item">
-  <a class="nav-link" href="{{site.baseurl}}/Projects.html"  id="Projects" target="_self">Projects</a>
+  <a class="nav-link" href="{{site.baseurl}}/index.html#skillSection" name="skillSection" id="Skill" target="_self">Skill</a>
+</li>
+
+<li class="nav-item">
+  <a class="nav-link" href="{{site.baseurl}}/Projects.html" id="Projects" target="_self">Projects</a>
 </li>
 <li class="nav-item">
   <a class="nav-link" href="{{site.baseurl}}/Contact.html" id="Contact" target="_self">Contact</a>
@@ -42,32 +42,8 @@
 
 
 
+
   $(document).ready(function () {
-
-$('#Skill').click(function(){
-
-  $(this).attr('{{site.baseurl}}/index.html#slide',url)
-
-
-})
-$('#AboutMe').click(function(){
-
-$(this).attr('{{site.baseurl}}/index.html#skillSection',url)
-
-
-})
-
-
-
-
-
-
-
-
-
-
-
-
 
     var url = window.location.pathname,
       urlRegExp = new RegExp(url.replace(/\/$/, '') + "$");
@@ -77,20 +53,89 @@ $(this).attr('{{site.baseurl}}/index.html#skillSection',url)
 
 
 
-    if (urlRegExp.test(this.href.replace(/\/$/, ''))) {
+      if (urlRegExp.test(this.href.replace(/\/$/, ''))) {
         $(this).addClass('active');
       }
+
+
+
+
+      if ($("#Projects ").hasClass("active")) {
+
+        $("#MagicMenu")
+          .removeClass("fixed-top bg-transparent")
+          .addClass("bg-dark d-block")
+          .css('color', '#fff');
+
+      }
+      if ($("#index-area ").hasClass("active")) {
+        console.log("index다")
+        $("#MagicMenu")
+          .removeClass("bg-dark d-block")
+          .addClass("fixed-top bg-transparent")
+
+      }
+
+
+
+
+
+
     });
 
 
-    if ($("#Projects ").hasClass("active")) {
-      console.log("index")
-      $("#MagicMenu")
-        .removeClass("fixed-top bg-transparent")
-        .addClass("bg-dark d-block")
-        .css('color', '#fff');
+    
 
-    }
+    $('#AboutMe').click(function () {
+      $(this).attr('AboutMeArea', name).addClass('active')
+      $('#index').removeClass('active')
+
+      let $aboutAct = $(this).attr('AboutMeArea', name).hasClass('active')
+
+      $(this).attr('AboutMeArea', name).addClass('active')
+      if ($aboutAct) {
+        $(this).attr('AboutMeArea', name).removeClass('active')
+      } else {
+        $(this).attr('AboutMeArea', name).addClass('active')
+      }
+
+
+      let $clickE = $('#universeMe').hasClass("d-none");
+
+      if ($clickE) {
+        $('#universeMe').removeClass("d-none")
+
+      } else if(!$clickE && !$aboutAct){
+        $('#universeMe').addClass("d-none")
+      }else{
+
+      }
+    })
+
+
+
+
+
+
+    $('#Skill').click(function () {
+      $(this).attr('skillSection', name).addClass('active')
+
+
+      let $skillAct = $(this).attr('skillSection', name).hasClass('active')
+
+      if ($skillAct) {
+        $(this).attr('skillSection', name).removeClass('active')
+
+      } else {
+        $(this).attr('skillSection', name).add('active')
+
+      }
+
+
+
+    })
+
+
 
 
   });

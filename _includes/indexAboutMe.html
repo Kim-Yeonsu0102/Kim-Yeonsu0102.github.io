@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="../assets/css/particle.css" />
 
-<div class="slide" name="slide02">
+<div class="slide" id="AboutMeArea">
   <div class="no-gutters d-flex justify-content-center align-items-center" id="AboutMe-area">
     <div class="page-bg"></div>
 
@@ -11,10 +11,25 @@
       <div class="particle particle-4"></div>
     </div>
 
+
+
     <div class="aboutArea d-flex justify-content-between no-gutters col-10">
-      <div class="col-lg-5 col-md-5 col-sm-12 p-0 aboutPic pdtb">
+      <div class="col-lg-5 col-md-5 col-sm-12 p-0 aboutPic pdtb ">
+
+        
+
         <figure class="snip1477">
-          <img src="/assets/images/earth.png" alt="Kim Yeon su" />
+
+          
+    <svg id="universeMe" class="pulse d-none" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <circle id="Oval" cx="512" cy="512" r="512"></circle>
+      <circle id="Oval" cx="512" cy="512" r="512"></circle>
+      <circle id="Oval" cx="512" cy="512" r="512"></circle>
+    </svg>
+
+
+          <img src="assets/images/earth.png" alt="Kim Yeon su" />
+
           <div class="title">
             <div>
               <h6>Yes, It's Me!</h6>
@@ -44,22 +59,34 @@
 
 <script>
 
-var typing = document.getElementById('typing');
-var typewriter = new Typewriter(typing, {
-    loop: true
-});
 
-typewriter
+
+
+
+
+
+
+
+
+
+
+
+  var typing = document.getElementById('typing');
+  var typewriter = new Typewriter(typing, {
+    loop: true
+  });
+
+  typewriter
     .typeString('우리는 답을 찾을 것이다.')
-    .pauseFor(1500)       
-      .typeString('<br/>')
+    .pauseFor(1500)
+    .typeString('<br/>')
     .typeString('늘 그래왔듯이..')
     .pauseFor(4000)
-        .deleteAll()                        
-        //.typeString('<br/>') 
+    .deleteAll()
+    //.typeString('<br/>') 
     .typeString('안녕하세요.')
     .pauseFor(1000)
-    .typeString('<br/>')     
+    .typeString('<br/>')
     .typeString('김연수 입니다.')
     .pauseFor(4000)
     .start();
