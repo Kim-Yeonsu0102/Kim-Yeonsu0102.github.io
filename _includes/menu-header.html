@@ -1,7 +1,7 @@
 <!--  Replace menu links here -->
 
 <li class="nav-item">
-  <a class="nav-link" href="{{site.baseurl}}/index.html" id="index" target="_self">Home</a>
+  <a class="nav-link" href="{{site.baseurl}}" id="index" target="_self">Home</a>
 </li>
 <li class="nav-item">
   <a class="nav-link " href="{{site.baseurl}}/#AboutMe-area" id="AboutMe" target="_self">AboutMe</a>
@@ -44,11 +44,10 @@
 
   $(document).ready(function () {
 
-    if (window.location.href == 'Kim-Yeonsu0102.github.io') {
+    if (window.location.href == 'http://Kim-Yeonsu0102.github.io') {
       console.log('hi')
       $('#').removeClass('active');
       $("#MagicMenu")
-        .removeClass("bg-dark d-block")
         .addClass("fixed-top bg-transparent").css('color', '#fff');
     }
 
@@ -62,12 +61,6 @@
 
     $('a').each(function () {
 
-
-
-      if (urlRegExp.test(this.href.replace(/\/$/, ''))) {
-        $(this).addClass('active');
-      }
-    });
 
     if ($("#Projects ").hasClass("active")) {
       console.log("index")
@@ -85,6 +78,12 @@
 
     }
 
+
+
+    if (urlRegExp.test(this.href.replace(/\/$/, ''))) {
+        $(this).addClass('active');
+      }
+    });
 
 
 
