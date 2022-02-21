@@ -4,11 +4,11 @@
   <a class="nav-link" href="{{site.baseurl}}/index.html" id="index" target="_self">Home</a>
 </li>
 <li class="nav-item">
-  <a class="nav-link " href="{{site.baseurl}}/index.html #AboutMe-area" id="AboutMe" target="_self">AboutMe</a>
+  <a class="nav-link " href="{{site.baseurl}}/#AboutMe-area" id="AboutMe" target="_self">AboutMe</a>
 </li>
 
 <li class="nav-item">
-  <a class="nav-link" href="{{site.baseurl}}/index.html #skillSection" id="Skill" target="_self">Skill</a>
+  <a class="nav-link" href="{{site.baseurl}}/#skillSection" id="Skill" target="_self">Skill</a>
 </li>
 
 <li class="nav-item">
@@ -46,7 +46,7 @@
 
     if (window.location.href == 'Kim-Yeonsu0102.github.io') {
       console.log('hi')
-      $('a').removeClass('active');
+      $('#').removeClass('active');
       $("#MagicMenu")
         .removeClass("bg-dark d-block")
         .addClass("fixed-top bg-transparent").css('color', '#fff');
