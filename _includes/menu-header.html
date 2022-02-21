@@ -15,7 +15,7 @@
   <a class="nav-link" href="{{site.baseurl}}/Projects.html" name="Projects" id="Projects" target="_self">Projects</a>
 </li>
 <li class="nav-item">
-  <a class="nav-link" href="{{site.baseurl}}/Contact.html" name="Contact" id="Contact" target="_self">Contact</a>
+  <a class="nav-link" href="{{site.baseurl}}/index.html#ContactArea" name="ContactArea" id="Contact" target="_self">Contact</a>
 </li>
 <!-- <li class="nav-item">
   <a
@@ -69,17 +69,22 @@
 
     $("#AboutMe").click(function () {
 
-      
-      if($("#index").attr("index-area", name).hasClass("active")){
-        $("#index").attr("index-area", name).removeClass("active")
-      }
-
       $("#index, #Skill, #Projects").removeClass("active");
       $(this).attr("AboutMeArea", name).addClass("active");
       
+      if($("#index").attr("https://Kim-Yeonsu0102.github.io/index.html#AboutMeArea", url).hasClass('active')){
+        console.log("훼이크치네 이새끼 ")
+        $("#index").attr("index-area", name).removeClass("active")
+      }
+
+      
 
       let $aboutAct = $(this).attr("AboutMeArea", name).hasClass("active");
-    
+      if ($aboutAct) {
+        $(this).attr("AboutMeArea", name).removeClass("active");
+      } else {
+        $(this).attr("AboutMeArea", name).add("active");
+      }
 
    
       let $clickE = $("#universeMe").hasClass("d-none");
@@ -87,6 +92,8 @@
       if ($clickE) {
         $("#universeMe").removeClass("d-none");
       } else if (!$clickE && !$aboutAct) {
+        $("#universeMe").addClass("d-none");
+      }else if(!$clickE && $aboutAct){
         $("#universeMe").addClass("d-none");
       } else {
       }
