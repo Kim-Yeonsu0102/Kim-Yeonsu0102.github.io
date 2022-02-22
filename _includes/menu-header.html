@@ -1,10 +1,10 @@
 <!--  Replace menu links here -->
 
 <li class="nav-item">
-  <a class="nav-link click" href="{{site.baseurl}}/index.html" name="index-area" id="index" target="_self">Home</a>
+  <a class="nav-link " href="{{site.baseurl}}/index.html" name="index-area" id="index" target="_self">Home</a>
 </li>
 <li class="nav-item">
-  <a class="nav-link click" href="{{site.baseurl}}/index.html#AboutMeArea" name="AboutMeArea" id="AboutMe" target="_self">AboutMe</a>
+  <a class="nav-link " href="{{site.baseurl}}/AboutME.html" name="AboutMeArea" id="AboutMe" target="_self">AboutMe</a>
 </li>
 
 <li class="nav-item">
@@ -15,7 +15,7 @@
   <a class="nav-link" href="{{site.baseurl}}/Projects.html" name="Projects" id="Projects" target="_self">Projects</a>
 </li>
 <li class="nav-item">
-  <a class="nav-link  " href="{{site.baseurl}}/index.html#ContactArea" name="ContactArea" id="ContactMe" target="_self">Contact</a>
+  <a class="nav-link" href="{{site.baseurl}}/index.html#ContactArea" name="ContactArea" id="ContactMe" target="_self">Contact</a>
 </li>
 <!-- <li class="nav-item">
   <a
@@ -37,98 +37,99 @@
 </style>
 
 <script>
+
+
+
   $(document).ready(function () {
-
-
-    var url = window.location.pathname,
-      urlRegExp = new RegExp(url.replace(/\/$/, "") + "$");
-
-    $("a").each(function () {
-      if (urlRegExp.test(this.href.replace(/\/$/, ""))) {
-        $(this).addClass("active");
-      }
-
-
-
-
-      if ($("#index").hasClass("active")&&$("#Projects").hasClass("active") ) {
-        console.log("인덱스에 집중");
-
-        $("#AboutMe, #Skill, #Projects,#ContactMe").removeClass("active");
-
-        $("#MagicMenu").removeClass("bg-dark d-block").addClass("fixed-top bg-transparent").css("color", "#ccc");
-      } else if ($("#Projects ").hasClass("active")) {
-
-        
-        $("#MagicMenu").removeClass("fixed-top bg-transparent").addClass("bg-dark d-block");
-      }
-    });
-
     
-    
-
-    $("#AboutMe").click(function () {
-
-      $("#index, #Skill, #Projects,#ContactMe").removeClass("active");
-      $(this).attr("AboutMeArea", name).addClass("active");
-      
-      
-      
-
-      let $aboutAct = $(this).attr("AboutMeArea", name).hasClass("active");
-      if ($aboutAct) {
-        $(this).attr("AboutMeArea", name).removeClass("active");
-      } else {
-        $(this).attr("AboutMeArea", name).add("active");
-      }
-
    
-      let $clickE = $("#universeMe").hasClass("d-none");
+$(".nav-item")
+      .on("click", function () {
 
-      if ($clickE) {
-        $("#universeMe").removeClass("d-none");
-      } else if (!$clickE && !$aboutAct) {
-        $("#universeMe").addClass("d-none");
-      }else if(!$clickE && $aboutAct){
-        $("#universeMe").addClass("d-none");
-      } else {
-      }
-    });
+        console.log("클릭")
+       
+       
+        
+        if ($(this).hasClass("active")===true) {
+          console.log("액티브제거")
+          $(this).removeClass("active");
 
-    $("#Skill").click(function () {
-      $("#index, #AboutMe, #Projects,#ContactMe").removeClass("active");      
-      $(this).attr("skillSection", name).addClass("active");
-     
-
-      let $skillAct = $(this).attr("skillSection", name).hasClass("active");
-     
-
-      if ($skillAct) {
-        $(this).attr("skillSection", name).removeClass("active");
-      } else {
-        $(this).attr("skillSection", name).add("active");
-      }
-    });
-
-    $("#ContactMe").click(function () {
-      $("#index, #AboutMe,#Skill, #Projects").removeClass("active");      
-      $(this).attr("ContactArea", name).addClass("active");
-     
-
-      let $contactAct = $(this).attr("ContactArea", name).hasClass("active");
-     
-
-      if ($contactAct) {
-        $(this).attr("ContactArea", name).removeClass("active");
-      } else {
-        $(this).attr("ContactArea", name).add("active");
-      }
-    });
-
-
-
-
+        } 
+        else {
+          // active class 추가
+          console.log("액티브추가")
+          $(this).addClass("active");
+         
+        }
+      }).off("click")
 
 
   });
+
+  //  if ($("#index").hasClass("active") && $("#Projects").hasClass("active")) {
+  //     console.log("인덱스에 집중");
+  //     $("#index").addClass("active");
+
+  //    $("#Projects").click(function () {
+  //   $(this).attr("Projects", name).addClass("active")
+  //  if ($("#index").hasClass("active")) {
+  //    $("#AboutMe, #Skill, #Projects,#ContactMe").removeClass("active");
+  //    $("#MagicMenu").removeClass("fixed-top bg-transparent").addClass("bg-dark d-block").css("color", "#ccc");
+  //  }
+
+  //  });
+
+  //     $("#AboutMe, #Skill, #Projects,#ContactMe").removeClass("active");
+  //     $("#MagicMenu").removeClass("bg-dark d-block").addClass("fixed-top bg-transparent").css("color", "#ccc");
+  //   } else if ($("#index,#Skill,#ContactMe").hasClass("active")) {
+  //     $("#MagicMenu").removeClass("bg-dark d-block").addClass("fixed-top bg-transparent");
+
+  //     $("#index").removeClass("active");
+
+  //   } else if ($("#AboutMe,#Projects ").hasClass("active")) {
+  //     $("#MagicMenu").removeClass("fixed-top bg-transparent").addClass("bg-dark d-block");
+  //   } else {
+  //     $("#MagicMenu").removeClass("fixed-top bg-transparent").addClass("bg-dark d-block");
+  //   }
+
+  // $("#index", "#Skill", "#ContactMe").click(function () {
+
+  //   $(this).addClass("active");
+
+  //   let $indexAct = $("#index").attr("index-area", name).hasClass("active");
+  //   let $SkillAct = $("#Skill").attr("skillSection", name).hasClass("active");
+  //   let $contactAct = $("#ContactMe").attr("ContactArea", name).hasClass("active");
+
+  //   if ($SkillAct&&$indexAct) {
+  //     $("#index").attr("index-area", name).removeClass("active");
+  //   } else if ($contactAct&&$indexAct) {
+  //     $("#index").attr("index-area", name).removeClass("active");
+  //   } else {
+  //     $("#index").attr("index-area", name).addClass("active");
+  //   }
+  // });
+
+  // $("#Skill").click(function () {
+  //   $("#index, #AboutMe, #Projects,#ContactMe").removeClass("active");
+  //   $(this).attr("skillSection", name).addClass("active");
+
+  //   let $skillAct = $(this).attr("skillSection", name).hasClass("active");
+
+  //   if ($skillAct) {
+  //     $(this).attr("skillSection", name).removeClass("active");
+  //   } else {
+  //     $(this).attr("skillSection", name).add("active");
+  //   }
+  // });
+
+  // $("#index, #AboutMe,#Skill, #Projects").removeClass("active");
+  // $(this).attr("ContactArea", name).addClass("active");
+
+  // let $contactAct = $(this).attr("ContactArea", name).hasClass("active");
+
+  // if ($contactAct) {
+  //   $(this).attr("ContactArea", name).removeClass("active");
+  // } else {
+  //   $(this).attr("ContactArea", name).add("active");
+  // }
 </script>

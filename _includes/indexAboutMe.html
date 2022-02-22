@@ -11,28 +11,20 @@
       <div class="particle particle-4"></div>
     </div>
 
-
-
     <div class="aboutArea d-flex justify-content-between no-gutters col-10">
-      <div class="col-lg-5 col-md-5 col-sm-12 p-0 aboutPic pdtb ">
-
-        
-
+      <div class="col-lg-5 col-md-5 col-sm-12 p-0 aboutPic pdtb">
         <figure class="snip1477">
-
-          
-    <svg id="universeMe" class="pulse d-none" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-      <circle id="Oval" cx="512" cy="512" r="512"></circle>
-      <circle id="Oval" cx="512" cy="512" r="512"></circle>
-      <circle id="Oval" cx="512" cy="512" r="512"></circle>
-    </svg>
-
+          <svg id="universeMe" class="pulse d-none" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <circle id="Oval" cx="512" cy="512" r="512"></circle>
+            <circle id="Oval" cx="512" cy="512" r="512"></circle>
+            <circle id="Oval" cx="512" cy="512" r="512"></circle>
+          </svg>
 
           <img src="assets/images/earth.png" alt="Kim Yeon su" />
 
           <div class="title">
             <div>
-              <h6>Yes, It's Me!</h6>
+              <h6>Yes,Click Me!</h6>
               <h5>Kim Yeon Su</h5>
             </div>
           </div>
@@ -40,14 +32,14 @@
             <span class="large material-icons"> rocket_launch </span>
             <p>프론트 엔드를 꿈꾸는 긍정파워 김연수 입니다!</p>
           </figcaption>
-          <!-- <a href="/AboutMe.html"></a> -->
+          <a href="/AboutMe.html"></a>
         </figure>
       </div>
 
-      <div class="col-lg-7 col-md-7 col-sm-12 aboutMe">
+      <div class="col-lg-6 col-md-6 col-sm-12 aboutMe shine">
         <h1 id="typing"></h1>
         <p class="aboutTxt">
-          안되면 되게하라<br />
+          안되면 되게하라!<br />
           디자인을 전공 한 웹 개발자 김연수 입니다.
         </p>
       </div>
@@ -55,30 +47,51 @@
   </div>
 </div>
 
-
-
 <script>
 
 
+$('.aboutPic').mouseleave(function(){
+
+let $indexAct = $("#index").attr("index-area", name).hasClass("active");  
+let $clickE = $("#universeMe").hasClass("d-none");
+
+if ($clickE) {
+  console.log("hey")
+  $("#universeMe").removeClass("d-none");
+} else if (!$clickE && !$indexAct) {
+  $("#universeMe").addClass("d-none");
+}else if(!$clickE && $indexAct){
+  $("#universeMe").addClass("d-none");
+} else {
+}
+
+});
 
 
-  var typing = document.getElementById('typing');
+  var typing = document.getElementById("typing");
   var typewriter = new Typewriter(typing, {
-    loop: true
+    loop: true,
   });
 
   typewriter
-    .typeString('우리는 답을 찾을 것이다.')
+    .typeString("우리는 답을 찾을 것이다.")
     .pauseFor(1500)
-    .typeString('<br/>')
-    .typeString('늘 그래왔듯이..')
+    .typeString("<br/>")
+    .typeString("늘 그래왔듯이..")
     .pauseFor(4000)
     .deleteAll()
-    //.typeString('<br/>') 
-    .typeString('안녕하세요.')
+    //.typeString('<br/>')
+    .typeString("안녕하세요.")
     .pauseFor(1000)
-    .typeString('<br/>')
-    .typeString('김연수 입니다.')
+    .typeString("<br/>")
+    .typeString("김연수 입니다.")
     .pauseFor(4000)
     .start();
+
+
+
+
+
+
+
 </script>

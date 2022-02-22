@@ -12,14 +12,21 @@
   padding: 3rem 0;
 }
 
+.shine{
+  text-shadow:#fff 0px 0px 5px, #fff 0px 0px 10px, #fffcae 0px 0px 30px, 7px 3px 2px rgb(28 200 229 / 0%);
+  color: #FFFFFF;
+}
+
+
+
+
 .sectionBar {
   background: #fff;
   padding: 5px 0 20px;
 }
 
-
-.secTitArea{
-  background-color: #e9e9e9;
+.secTitArea {
+  background-color: #d2d2d2;
 }
 .sec-title {
   display: block;
@@ -90,6 +97,7 @@
   background: linear-gradient(-45deg, #000, #c705b0, #005ba9, #000000);
   background-size: 400% 400%;
   animation: gradient 40s ease infinite;
+  margin-top: -80px;
 }
 
 @keyframes gradient {
@@ -133,7 +141,7 @@
 }
 .aboutArea {
   margin-top: 40px;
-  height: 480px;
+  height: 490px;
   align-items: center;
 }
 .aboutArea .aboutPic {
@@ -152,7 +160,7 @@
   padding: 0 1rem;
 }
 .aboutMe h1 {
-  font-size: 2.6rem;
+  font-size: 2.4rem;
 
   color: #fff;
   font-family: var(--titleFont);
@@ -160,13 +168,13 @@
 }
 
 .aboutTxt {
-  color: #ccc;
+  
   padding: 0 1rem;
 }
 
 /*스킬 리스트*/
 
-#skillSection{
+#skillSection {
   background: #333;
   text-align: center;
   padding-bottom: 60px;
@@ -174,14 +182,16 @@
 
 #ContactArea {
   background: #333;
-    text-align: center;
-    padding:30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-wrap: nowrap;
+  text-align: center;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: nowrap;
+  position: relative;
+  
 }
 
 #skillSection .container-fluid,
@@ -189,16 +199,14 @@
   margin: 1rem auto;
 }
 
-
 .skillsec {
   text-align: left;
   display: flex;
   flex-direction: column;
 }
 
-#ContactArea .skillsec{
+#ContactArea .skillsec {
   text-align: center;
-
 }
 
 .skillsec > ul {
@@ -261,17 +269,59 @@
   justify-content: space-between;
 }
 
-
-.phonNum{
-  font-size: 4rem;
-  font-weight: 600;
-  font-family: var(--titleFont)
+#featuredArea {
+  height: 100%;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: space-between;
+  display: flex;
+}
+.projextCard {
+  height: 300px;
+  overflow: hidden;
 }
 
+.cardImg {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  border-radius: 5px;
 
+  background-size: cover;
+  border: 1px solid #ccc;
+}
 
+.banner { 
+  background: url(/assets/images/goToUniverse.jpg) center no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  overflow: hidden;
+}
 
+.banner02 {
+ 
+  width: 100%;
+  height: 120%;
+  background: url(/assets/images/banner.png) top no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: -10%;
+  right: 0px;
+  opacity: 1;
+ 
+}
 
+.phonNum {
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: var(--titleFont);
+  letter-spacing: 2px;
+}
+
+/* 
+#featuredArea>h5{
+  color:#b298c5
+} */
 
 /*main picture earth(It's me) CSS*/
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,500,700);
@@ -453,6 +503,30 @@ figure.snip1477.hover figcaption {
 /* 미디어쿼리 분기점  */
 
 @media (max-width: 767px) {
+  #navbarColor02 {
+    background: linear-gradient(0deg, black, #18738e) !important;
+    padding: 10px 0 30px;
+    border-bottom: 1px solid #ccc;
+    opacity: 0.9;
+  }
+  .navbar-dark .navbar-nav .nav-link {
+    color: #ffffff;
+  }
+
+  .navbar-dark .navbar-nav .nav-link:hover {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #1ccde2, 0 0 30px #1ccde2, 0 0 40px #1ccde2, 0 0 55px #1ccde2, 0 0 75px #1ccde2;
+  }
+  .banner {
+    position: unset;
+    top: 0px;
+    right: 0px;
+  }
+
+  .banner02 {
+   
+    opacity: 0.6;
+  }
+
   .pdtb {
     padding: 1.5rem 0;
   }
@@ -512,16 +586,14 @@ figure.snip1477.hover figcaption {
   .noCodeLang {
     display: none;
   }
-  .phonNum{
+  .phonNum {
     font-size: 2rem;
-    
   }
 }
 
 @media (max-width: 415px) {
-  .phonNum{
+  .phonNum {
     font-size: 2rem;
-    
   }
   .chartTit {
     font-size: 14px;

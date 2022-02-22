@@ -9,9 +9,10 @@ body {
 .site-content {
 	/* margin-top:30px; */
 	min-height:400px;
+	margin-top: 100px;
 }
 .remove-site-content-margin {
-	margin-top:-30px;
+	margin-top:-100px;
 }
 img {
 	max-width:100%;
@@ -43,6 +44,15 @@ a.text-dark:hover {
 .z-index-1 {
 	z-index:1;
 }
+
+.z-index-2 {
+	z-index:2;
+}
+.z-index-3 {
+	z-index:3;
+}
+
+
 @media (max-width:991.98px) {
 	.display-3 {
 		font-size:3.5rem;
@@ -191,6 +201,7 @@ a.text-dark:hover {
 .navbar {
 	transition:top 0.2s ease-in-out;
 	font-weight:400;
+	box-shadow:0px 3px 6px 0px rgba(0,0,0,0.4);
 }
 .navbar .highlight .nav-link {
 	color: var(--purple)!important;
@@ -651,6 +662,7 @@ footer {
 .excerpt {
     color: rgba(0,0,0,0.59);
     margin-top:10px;
+		font-size: 0.8rem;
 }
 article {
 	font-size:20px;

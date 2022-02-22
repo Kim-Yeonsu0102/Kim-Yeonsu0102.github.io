@@ -50,35 +50,6 @@
         }
 
 
-
-        if (matchMedia("screen and (min-width: 992px)").matches) {
-            if(scrollY == 0){
-                // $('nav').removeClass('nav-down');
-            $('.nav-down').css({           
-                "background": "none",
-                "transition": "all 0.55s ease",
-                "border-bottom": "0px"
-              });
-            }else{
-                $('.nav-down').css({           
-                  "background": "linear-gradient(180deg, black, #4e2170)",
-                  "transition": "all 0.55s ease",
-                  "border-bottom": "1px solid rgb(38 141 190)"
-                });
-            
-            }
-              
-        }else{
-            $('.nav-down').css({           
-              "background": "linear-gradient(45deg, black, #7d188e)",
-              "transition": "all 0.55s ease",
-              "border-bottom": "1px solid rgb(38 141 190)"
-
-            });
-        
-        }
-          
-
         
 
         lastScrollTop = st;
