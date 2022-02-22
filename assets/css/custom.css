@@ -73,7 +73,7 @@
 .sec-text {
   text-align: left;
   line-height: 1.6;
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #555;
 }
 .sec-text > span {
@@ -542,6 +542,13 @@ figure.snip1477.hover figcaption {
   }
   .m-sec-title {
     display: block;
+  }
+
+  .sec-text {
+   
+    font-size: 1rem;
+    letter-spacing: -0.5px;
+    
   }
 
   #AboutMe-area .aboutArea {
