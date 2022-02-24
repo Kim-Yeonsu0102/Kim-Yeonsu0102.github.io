@@ -18,6 +18,9 @@
 }
 
 
+.of-hidden{
+  overflow:hidden;
+}
 
 
 .sectionBar {
@@ -601,13 +604,38 @@ figure{
  */
 
 
+/*프로젝트 갤러리*/
 
 
+.siteUl >li{
+ height:240px;
+ min-height:240px;
+ 
+ margin-top:30px;
 
 
+}
+.siteUl >li > a{
+  border:1px solid #ccc;
+ height:200px;
+ overflow: hidden;
+border-radius: 10px;
+background: #000;
+
+}
+
+.siteUl >li > a:hover img{
+ opacity: 0.6;
+  
+}
 
 
-
+.siteUl >li > a img{
+  width: 100%;
+ 
+  height: max-content;
+  
+}
 /* 미디어쿼리 분기점  */
 
 @media (max-width: 767px) {
