@@ -13,7 +13,7 @@ image: assets/images/demo1.jpg
 <ul class="col12 d-flex flex-wrap siteUl">
 
 <li class="col-6 col-md-4">
-<a id="open-popup01" class="d-flex flex-column text-center image-link gallery-item  no-gutters" href="/assets/images/siteImade/01/01_01.png">
+<a id="open-popup01" class="d-flex flex-column text-center image-link gallery-item mfp-image image-link no-gutters" href="/assets/images/siteImade/01/01_01.png">
 <img src="/assets/images/siteImade/01/01_01.png" />
 </a>
 
@@ -22,7 +22,7 @@ image: assets/images/demo1.jpg
 
 
 <li class="col-6 col-md-4 ">
-<a id="open-popup02" class="d-flex flex-column text-center image-link gallery-item  no-gutters" href="/assets/images/siteImade/02/02_01.png">
+<a id="open-popup02" class="d-flex flex-column text-center image-link gallery-item mfp-image image-link no-gutters" href="/assets/images/siteImade/02/02_01.png">
 <img src="/assets/images/siteImade/02/02_01.png" />
 </a>
 
@@ -31,7 +31,7 @@ image: assets/images/demo1.jpg
 
 
 <li class="col-6 col-md-4">
-<a id="open-popup03" class="d-flex flex-column text-center image-link gallery-item  no-gutters" href="/assets/images/siteImade/03/03_01.png">
+<a id="open-popup03" class="d-flex flex-column text-center image-link gallery-item mfp-image image-link no-gutters" href="/assets/images/siteImade/03/03_01.png">
 <img src="/assets/images/siteImade/03/03_01.png" />
 </a>
 
@@ -39,7 +39,7 @@ image: assets/images/demo1.jpg
 </li>
 
 <li class="col-6 col-md-4">
-<a id="open-popup04" class="d-flex flex-column text-center image-link gallery-item  no-gutters" href="/assets/images/siteImade/04/04_01.png">
+<a id="open-popup04" class="d-flex flex-column text-center image-link gallery-item mfp-image image-link no-gutters" href="/assets/images/siteImade/04/04_01.png">
 <img src="/assets/images/siteImade/04/04_01.png" />
 </a>
 <span class="d-block mt-2 text-purple col-12 font-weight-bold text-center">보령전통식품</span>
@@ -47,7 +47,7 @@ image: assets/images/demo1.jpg
 
 
 <li class="col-6 col-md-4">
-<a id="open-popup05" class="d-flex flex-column text-center image-link gallery-item  no-gutters" href="/assets/images/siteImade/05/05_01.png">
+<a id="open-popup05" class="d-flex flex-column text-center image-link gallery-item mfp-image image-link no-gutters" href="/assets/images/siteImade/05/05_01.png">
 <img src="/assets/images/siteImade/05/05_01.png" />
 </a>
 
@@ -55,7 +55,7 @@ image: assets/images/demo1.jpg
 </li>
 
 <li class="col-6 col-md-4">
-<a id="open-popup06" class="d-flex flex-column text-center image-link gallery-item  no-gutters" href="/assets/images/siteImade/06/06_01.png">
+<a id="open-popup06" class="d-flex flex-column text-center image-link gallery-item mfp-image image-link no-gutters" href="/assets/images/siteImade/06/06_01.png">
 <img src="/assets/images/siteImade/06/06_01.png" />
 </a>
 
@@ -63,7 +63,7 @@ image: assets/images/demo1.jpg
 </li>
 
 <li class="col-6 col-md-4">
-<a id="open-popup07" class="d-flex flex-columnr text-center image-link gallery-item  no-gutters" href="/assets/images/siteImade/07/07_01.png">
+<a id="open-popup07" class="d-flex flex-columnr text-center image-link gallery-item mfp-image image-link no-gutters" href="/assets/images/siteImade/07/07_01.png">
 <img src="/assets/images/siteImade/07/07_01.png" />
 </a>
 
@@ -71,7 +71,7 @@ image: assets/images/demo1.jpg
 </li>
 
 <li class="col-6 col-md-4">
-<a id="open-popup08" class="d-flex flex-columnr text-center image-link gallery-item  no-gutters" href="/assets/images/siteImade/08/08_01.png">
+<a id="open-popup08" class="d-flex flex-columnr text-center image-link gallery-item mfp-image image-link no-gutters" href="/assets/images/siteImade/08/08_01.png">
 <img src="/assets/images/siteImade/08/08_01.png" />
 </a>
 <span class="d-block mt-2 text-purple col-12 font-weight-bold text-center">토탈지게차서비스</span>
@@ -80,7 +80,7 @@ image: assets/images/demo1.jpg
 
 
 <li class="col-6 col-md-4">
-<a id="open-popup09" class="d-flex flex-columnr text-center image-link gallery-item  no-gutters" href="/assets/images/siteImade/09/09_01.png">
+<a id="open-popup09" class="d-flex flex-columnr text-center image-link gallery-item mfp-image image-link no-gutters" href="/assets/images/siteImade/09/09_01.png">
 <img src="/assets/images/siteImade/09/09_01.png" />
 </a>
 
@@ -89,7 +89,7 @@ image: assets/images/demo1.jpg
 
 
 <li class="col-6 col-md-4">
-<a id="open-popup10" class="d-flex flex-columnr text-center image-link gallery-item  no-gutters" href="/assets/images/siteImade/10/10_01.png">
+<a id="open-popup10" class="d-flex flex-columnr text-center image-link gallery-item mfp-image image-link no-gutters" href="/assets/images/siteImade/10/10_01.png">
 <img src="/assets/images/siteImade/10/10_01.png" />
 </a>
 
