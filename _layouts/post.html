@@ -4,7 +4,7 @@ layout: default
 
 {% assign author = site.authors[page.author] %}
 <div class="container" id="MyProjextArea">
-  <div class="jumbotron jumbotron-fluid mb-3 pl-0 pt-0 pb-0 bg-white position-relative border-bottom-2-puple">
+  <div class="jumbotron jumbotron-fluid mb-3 pl-0 pt-0 pb-0 bg-white position-relative border-bottom-2-puple col-12">
     <div class="h-100 tofront">
       <div class="row {% if page.image %} justify-content-between {% else %} justify-content-center {% endif %}">
         <div class="{% if page.image %} col-md-6 {% else %} col-md-8 {% endif %} pr-0 pr-md-4 pt-4 pb-4 align-self-center">
@@ -33,9 +33,9 @@ layout: default
   </div>
 </div>
 
-<div class="container-fluid pt-4 pb-4 no-gutters ">
-  <div class="row justify-content-center">
-    <div class="col-md-12 col-lg-10 ">
+<div class="container" >
+  <div class="row pb-2 no-gutters justify-content-center ">
+    <div class="col-md-12 col-lg-10 justify-content-center align-content-center">
 			{{ content }}		
     </div>
 			
@@ -43,8 +43,8 @@ layout: default
 			<a href="/Projects.html" class="fixed-bottom col-1 backBTN">Back</a>
 		</div>
   </div>
-</div>
 
+</div>
 
 
 
