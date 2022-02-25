@@ -6913,6 +6913,7 @@ button.bg-lightblue:focus {
   border-bottom: 2px dashed var(--purple) !important;
 }
 
+.border-bottom-05{border:0.5px solid rgb(255 255 255 / 20%) !important;}
 
 .border-left {
   border-left: 1px solid #e8f3ec !important;

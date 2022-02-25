@@ -29,31 +29,45 @@
 }
 
 .secTitArea {
-  background-color: #d2d2d2;
+  background-color: #000000;
+
 }
 .sec-title {
-  display: block;
-  font-size: 3rem;
-  text-align: center;
+  
   font-family: var(--secTitFont);
-  font-size: 3rem;
+ 
 
   padding: 0.25em 0 0.325em;
   margin: 0 auto;
+ 
 
-  /* Clip Background Image */
-  background: url(/assets/images/animated-text-fill.png) repeat-y;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  font-weight: normal;
+  width: 100%;
+  text-align: center;
+  font-size: 3Rem;
+  background: linear-gradient(-45deg, #4bc0c8 25%, #feac5e 25%, #feac5e 50%, #4bc0c8 50%, #4bc0c8 75%, #feac5e 75%, #feac5e);
   -webkit-background-clip: text;
-  background-clip: text;
-  /* Animate Background Image */
   -webkit-text-fill-color: transparent;
-  animation: aitf 80s linear infinite;
-  /* Activate hardware acceleration for smoother animations */
-  transform: translate3d(0, 0, 0);
-  backface-visibility: hidden;
+  background-size: 20px 20px;
+  background-position: 0 0;
+  animation: stripes 1s linear infinite;
 }
+
+@keyframes stripes {
+  100% {
+    background-position: 20px 0, 20px 0, 20px 0;
+  }
+}
+
+/* 
+
 .m-sec-title {
-  display: black;
+  display: block;
   font-size: 3rem;
   text-align: center;
   font-family: var(--secTitFont);
@@ -61,7 +75,7 @@
   padding: 0.5rem 0;
   margin: 0 auto;
   color: #313131;
-}
+} */
 
 /* Animate Background Image */
 @keyframes aitf {
@@ -72,6 +86,12 @@
     background-position: 100% 50%;
   }
 }
+
+
+
+
+
+
 
 .sec-text {
   text-align: left;
@@ -636,18 +656,52 @@ background: #000;
   height: max-content;
   
 }
+
+
+@media (max-width: 970px) {
+  #navbarColor02 {
+    background: linear-gradient(0deg, black, #18738e) !important;
+    padding: 0px 0 30px;
+    border-bottom: 1px solid #fff;
+    opacity: 0.9;
+    /* z-index: -1; */
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px rgba(255,255,255,0.5);
+    margin-top: 40px;
+  }
+  .navbar-dark .navbar-nav .nav-link {
+    color: #ffffff;
+  }
+}
+.nav-item{
+  width:100%;
+  border-bottom:0.5px solid rgba(255,255,255,0.2);
+  text-align: center;
+}
+
+
 /* 미디어쿼리 분기점  */
 
 @media (max-width: 767px) {
   #navbarColor02 {
     background: linear-gradient(0deg, black, #18738e) !important;
-    padding: 10px 0 30px;
-    border-bottom: 1px solid #ccc;
+    padding: 0px 0 30px;
+    border-bottom: 1px solid #fff;
     opacity: 0.9;
+    /* z-index: -1; */
+    border-radius: 0px 0px 20px 20px;
+    box-shadow: 0px 0px 30px rgba(255,255,255,0.5);
+    margin-top: 0px;
   }
   .navbar-dark .navbar-nav .nav-link {
     color: #ffffff;
   }
+  .nav-item{
+    width:100%;
+    border-bottom:0.5px solid rgba(255,255,255,0.2);
+    text-align: center;
+  }
+  
 
   .navbar-dark .navbar-nav .nav-link:hover {
     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #1ccde2, 0 0 30px #1ccde2, 0 0 40px #1ccde2, 0 0 55px #1ccde2, 0 0 75px #1ccde2;
