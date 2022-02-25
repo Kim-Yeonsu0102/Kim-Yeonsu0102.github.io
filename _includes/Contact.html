@@ -1,37 +1,65 @@
-
-  
-  <div class="secTitArea  ">
-  
+<div class="secTitArea">
   <p class="sec-title h80 text-white pdtb justify-content-center">Plz,Contact Me!!</p>
- 
-   
-  
-  </div>
+</div>
 
 <div id="ContactArea" name="Contact">
-    
+  <div class="container-fluid skillsec col-10 d-flex justify-content-center no-gutters">
+    <div class="col-md-8 col-12 d-flex justify-content-center align-content-center no-gutters flex-nowrap z-index-2">
+      <form action="https://formspree.io/f/moqrdgry" method="POST" class="col-md-10 col-12">
+        <p class="mb-2 text-white phonNum text-md-right text-center shine">Tel. Number!!<br />010-9563-9872</p>
+        <div class="form-group d-flex flex-xl-row flex-lg-row flex-md-row flex-column justify-content-center">
+          <div class="no-gutters col-xl-6 col-lg-6 col-md-6 col-12 ml-md-1 mr-1 pt-1">
+            <input class="form-control" type="text" name="name" placeholder="Name*" required />
+          </div>
+          <div class="no-gutters col-xl-6 col-lg-6 col-md-6 col-12 pt-1">
+            <input class="form-control" type="email" name="email" placeholder="E-mail Address*" required />
+          </div>
+        </div>
+        <textarea class="form-control col-12 mb-3" name="message" placeholder="Message*" required></textarea>
+        <input class="btn btn-cyan text-white col-12 pb-1" type="submit" value="Send" />
+      </form>
+    </div>
+    <p class="col-md-4 col-12 d-flex no-gutters banner02"></p>
+  </div>
+</div>
 
-  
-  <div class=" container-fluid skillsec col-10 d-flex justify-content-center no-gutters">
 
 
-<div class="col-md-8 col-12 d-flex justify-content-center align-content-center no-gutters flex-nowrap z-index-2">
-
-<form action="https://formspree.io/{{site.email}}" method="POST" class="col-md-10 col-12">    
-<p class="mb-2 text-white phonNum text-md-right text-center shine">Tel. Number!!<br>010-9563-9872</p>
-<div class="form-group d-flex flex-xl-row flex-lg-row flex-md-row flex-column justify-content-center ">
-<div class="no-gutters col-xl-6 col-lg-6 col-md-6 col-12 ml-md-1 mr-1  pt-1 ">
-<input class="form-control" type="text" name="name" placeholder="Name*" required>
-</div>
-<div class="no-gutters col-xl-6 col-lg-6 col-md-6 col-12 pt-1 ">
-<input class="form-control" type="email" name="_replyto" placeholder="E-mail Address*" required>
-</div>
-</div>
-<textarea class="form-control col-12 mb-3" name="message" placeholder="Message*" required></textarea>    
-<input class="btn btn-cyan text-white col-12 pb-1" type="submit" value="Send">
-</form>
-</div>
-<p class=" col-md-4 col-12  d-flex no-gutters banner02"></p>
-
-</div>
-</div>
+<script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+<script>
+  /* paste this line in verbatim */
+  window.formbutton =
+    window.formbutton ||
+    function () {
+      (formbutton.q = formbutton.q || []).push(arguments);
+    };
+  /* customize formbutton below*/
+  formbutton("create", {
+    action: "https://formspree.io/f/moqrdgry",
+    title: "How can we help?",
+    fields: [
+      {
+        type: "email",
+        label: "Email:",
+        name: "email",
+        required: true,
+        placeholder: "your@email.com",
+      },
+      {
+        type: "textarea",
+        label: "Message:",
+        name: "message",
+        placeholder: "What's on your mind?",
+      },
+      { type: "submit" },
+    ],
+    styles: {
+      title: {
+        backgroundColor: "gray",
+      },
+      button: {
+        backgroundColor: "gray",
+      },
+    },
+  });
+</script>

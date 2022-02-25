@@ -3,19 +3,19 @@ title: "My Projects"
 layout: default
 permalink: "/Projects.html"
 ---
-<div class="container">
+<div class="container ">
 <div class="row justify-content-center">
-    <div class="col-md-11">        
+    <div class="col12">        
         <div class="row align-items-center mb-5">
             <div class="col-md-11">
                 <h2 class="font-weight-bold h1 text-secondary">{{page.title}} </h2>
-                <p ><a href="{{ site.authors.master.site }}" class="text-gray">{{ site.authors.master.site }}</a></p>
+                <p ><a href="https://github.com/Kim-Yeonsu0102" class="text-gray" target="_blank">https://github.com/Kim-Yeonsu0102</a></p>
                 <p class="text-mutedh6 mt-2">{{ site.authors.master.bio }}</p>
             </div>
           
         </div>
         <h4 class="font-weight-bold spanborder"><span>All My Projects!!</span></h4>
-      <div class="row col-12 h-max-100 flex-wrap flex-raw ">
+      <div class="row  h-max-100 flex-wrap flex-raw ">
             {% assign posts = site.posts | where:"author","master" %}
             {% for post in posts %}
             {% include main-loop-card.html %}

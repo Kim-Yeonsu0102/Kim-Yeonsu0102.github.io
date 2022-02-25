@@ -1,5 +1,7 @@
 <!--  Replace menu links here -->
-
+<li class="nav-item d-lg-none ">
+  <a class="nav-link navShine navselect ">[ S E L E C T]</a>
+</li>
 <li class="nav-item ">
   <a class="nav-link " href="{{site.baseurl}}/index.html" name="index-area" id="index" target="_self">Home</a>
 </li>
@@ -8,14 +10,14 @@
 </li>
 
 <li class="nav-item">
-  <a class="nav-link" href="{{site.baseurl}}/index.html#skillSection" name="skillSection" id="Skill" target="_self">Skill</a>
+  <a class="nav-link" href="{{site.baseurl}}/index.html#skillSection" value="skillSection" id="Skill" target="_self">Skill</a>
 </li>
 
 <li class="nav-item ">
   <a class="nav-link" href="{{site.baseurl}}/Projects.html" name="Projects" id="Projects" target="_self">Projects</a>
 </li>
 <li class="nav-item ">
-  <a class="nav-link" href="{{site.baseurl}}/index.html#ContactArea" name="ContactArea" id="ContactMe" target="_self">Contact</a>
+  <a class="nav-link " href="{{site.baseurl}}/index.html#ContactArea" value="ContactArea" id="ContactMe" target="_self">Contact</a>
 </li>
 <!-- <li class="nav-item">
   <a
@@ -27,109 +29,33 @@
   >
 </li> -->
 
-<style>
-  @media (max-width: 991px) {
-    #MagicMenu,
-    .bg-transparent {
-      background: linear-gradient(180deg, black, #7d188e);
-    }
-  }
-</style>
 
 <script>
 
 
-
-  $(document).ready(function () {
     
-   
-$(".nav-item")
-      .on("click", function () {
+$(document).ready(function() {
 
-        console.log("클릭")
-       
-       
-        
-        if ($(this).hasClass("active")===true) {
-          console.log("액티브제거")
-          $(this).removeClass("active");
+var path = window.location.pathname;
+var filename = path.match(/.*\/([^/]+)\.([^?]+)/i)[1];
 
-        } 
-        else {
-          // active class 추가
-          console.log("액티브추가")
-          $(this).addClass("active");
-         
-        }
-      }).off("click")
+if (filename == "index") {
+  $( "#index" ).addClass( "navShine" );
+}
+else if (filename == "AboutME") {
+  $( "#AboutMe" ).addClass( "navShine" );
+}
 
+else if (filename == "Projects") {
+  $( "#Projects" ).addClass( "navShine" );
+  
+}
+else {
+  console.log("Cannot find matching ID");
+}
+  
 
-  });
+})
+  
 
-  //  if ($("#index").hasClass("active") && $("#Projects").hasClass("active")) {
-  //     console.log("인덱스에 집중");
-  //     $("#index").addClass("active");
-
-  //    $("#Projects").click(function () {
-  //   $(this).attr("Projects", name).addClass("active")
-  //  if ($("#index").hasClass("active")) {
-  //    $("#AboutMe, #Skill, #Projects,#ContactMe").removeClass("active");
-  //    $("#MagicMenu").removeClass("fixed-top bg-transparent").addClass("bg-dark d-block").css("color", "#ccc");
-  //  }
-
-  //  });
-
-  //     $("#AboutMe, #Skill, #Projects,#ContactMe").removeClass("active");
-  //     $("#MagicMenu").removeClass("bg-dark d-block").addClass("fixed-top bg-transparent").css("color", "#ccc");
-  //   } else if ($("#index,#Skill,#ContactMe").hasClass("active")) {
-  //     $("#MagicMenu").removeClass("bg-dark d-block").addClass("fixed-top bg-transparent");
-
-  //     $("#index").removeClass("active");
-
-  //   } else if ($("#AboutMe,#Projects ").hasClass("active")) {
-  //     $("#MagicMenu").removeClass("fixed-top bg-transparent").addClass("bg-dark d-block");
-  //   } else {
-  //     $("#MagicMenu").removeClass("fixed-top bg-transparent").addClass("bg-dark d-block");
-  //   }
-
-  // $("#index", "#Skill", "#ContactMe").click(function () {
-
-  //   $(this).addClass("active");
-
-  //   let $indexAct = $("#index").attr("index-area", name).hasClass("active");
-  //   let $SkillAct = $("#Skill").attr("skillSection", name).hasClass("active");
-  //   let $contactAct = $("#ContactMe").attr("ContactArea", name).hasClass("active");
-
-  //   if ($SkillAct&&$indexAct) {
-  //     $("#index").attr("index-area", name).removeClass("active");
-  //   } else if ($contactAct&&$indexAct) {
-  //     $("#index").attr("index-area", name).removeClass("active");
-  //   } else {
-  //     $("#index").attr("index-area", name).addClass("active");
-  //   }
-  // });
-
-  // $("#Skill").click(function () {
-  //   $("#index, #AboutMe, #Projects,#ContactMe").removeClass("active");
-  //   $(this).attr("skillSection", name).addClass("active");
-
-  //   let $skillAct = $(this).attr("skillSection", name).hasClass("active");
-
-  //   if ($skillAct) {
-  //     $(this).attr("skillSection", name).removeClass("active");
-  //   } else {
-  //     $(this).attr("skillSection", name).add("active");
-  //   }
-  // });
-
-  // $("#index, #AboutMe,#Skill, #Projects").removeClass("active");
-  // $(this).attr("ContactArea", name).addClass("active");
-
-  // let $contactAct = $(this).attr("ContactArea", name).hasClass("active");
-
-  // if ($contactAct) {
-  //   $(this).attr("ContactArea", name).removeClass("active");
-  // } else {
-  //   $(this).attr("ContactArea", name).add("active");
-  // }
 </script>

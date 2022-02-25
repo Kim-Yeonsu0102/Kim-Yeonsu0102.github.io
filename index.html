@@ -11,14 +11,18 @@ description: "할 수 있다! 긍정에너지 김연수 입니다."
 
 {% include indexSkill02.html %}
  
-<div class="container-fluid no-gutters">
-   
-<div class="row mt-5 justify-content-center no-gutters ">
-   <div class="col-md-10 col-12 d-flex flex-wrap">
-    <div class="col-12 main-loop no-gutters">
+<div class="container-fluid ">
+
+ 
+
+<div class="row mt-5 justify-content-center  ">
+  <h3 class="font-weight-bold spanborder col-md-10 col-12"><span>All My Projects</span></h3>
+
+   <div class="col-md-8 col-12 d-flex flex-wrap">
+    <div class="col-12 main-loop ">
         
-      <h3 class="font-weight-bold spanborder"><span>All My Projects</span></h3>
-      <div class="row col-12 h-max-100 flex-wrap flex-raw ">
+      
+      <div class="row h-max-100 flex-wrap flex-raw  mt-4">
 
         {% for post in paginator.posts %}
         
@@ -57,10 +61,12 @@ description: "할 수 있다! 긍정에너지 김연수 입니다."
       </div> 
     </div>
     
-    <div class=" col-12">
-        {% include sidebar-featured.html %}    
-    </div>
+   
     
+</div>
+
+<div class=" col-10">
+  {% include sidebar-featured.html %}    
 </div>
 </div> 
 

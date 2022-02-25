@@ -8016,6 +8016,12 @@ button.bg-lightblue:focus {
 .h200 {
   height: 200px !important;
 }
+.h250 {
+  height: 250px !important;
+}
+.h300 {
+  height: 300px !important;
+}
 
 .h-auto {
   height: auto !important;

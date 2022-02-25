@@ -1,21 +1,21 @@
 
 
-<div class="mb-3 d-flex justify-content-between main-loop-card flex-column col-md-4 col-6 flex-wrap projextCard pl-1 pr-1">
-	<div class=" row col-12 no-gutters">
+<div class="mb-3 d-flex justify-content-between main-loop-card flex-column col-md-4 col-6 flex-wrap projextCard pl-1 pr-1 no-gutters">
+	<div class=" row no-gutters ">
 		{% if post.image %}
 		<div class="effect-wrap col-12 pr-0 text-right mb-1 ">
 
 		
 				<figure class="effect7">				
-					<a href="{{site.baseurl}}{{post.url}}" class="text-white d-block w-100 h200">
-					<div class="w-100 h200 cardImg " style="background:url({% if post.image contains '://' %}{{ post.image }}{% else %}{{ site.baseurl }}/{{ post.image }}{% endif %} )center no-repeat ;background-size: cover;" alt="{{ post.title }}"></div>
+					<a href="{{site.baseurl}}{{post.url}}" class="text-white d-block w-100 h250">
+					<div class="w-100 h250 cardImg " style="background:url({% if post.image contains '://' %}{{ post.image }}{% else %}{{ site.baseurl }}/{{ post.image }}{% endif %} )top no-repeat ;background-size: cover;" alt="{{ post.title }}"></div>
 					<figcaption>
 						<h3>Kim YS Projects</h3>
 						{% for category in post.categories %}
 						<p>	{{ category | truncate: 6 }}</p>
 						{% endfor %}
 
-						<span href="{{site.baseurl}}{{post.url}}" class="btn btn-cyan">Click!</span>
+						<!-- <span href="{{site.baseurl}}{{post.url}}" class="btn btn-cyan">Click!</span> -->
 					
 					</figcaption>			
 				</a>		
@@ -26,7 +26,7 @@
 	{% endif %}
 
 <div class="col-xl-12 col-lg-12 col-md-12 col-12 pl-2 pr-2">
-	<h2 class="mb-1 h5 font-weight-bold">
+	<h2 class="mb-1 mt-2 h5 font-weight-bold">
 	<a class="text-purple" href="{{site.baseurl}}{{post.url}}">{{ post.title }}</a>
 	</h2>
 	<p class="excerpt">
