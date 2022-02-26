@@ -5,9 +5,21 @@ categories: [HTML, Sass, JS]
 image: assets/images/typing.png
 Link: https://typing-game-ys.netlify.app
 ---
-
+<div class="row border-bottom ">
+  
+<div class="col-md-6 pr-0 align-self-center "><img class="rounded" src="/assets/images/typing.png" alt="{{ page.title }}"></div>
+  <div class="pdtb col-md-6 pr-0 align-self-center">
+  <p class="text-dark text-left"><b>개발 기간: </b> 2022.1.26~2022.1.31</p>
+  <p class="text-dark text-left "><b>개발 언어: </b> HTML,CSS,Scss,Javascript </p>
+  <p class="text-dark text-left "><b>담당 업무</b></p>
+  <p class="text-dark text-left pl-2"> 디자인 작업 (100%)</p>
+  <p class="text-dark text-left pl-2"> 퍼블리싱 (100%)</p>
+  <p class="text-dark text-left pl-2"> 사용자 페이지 개발 (100%)</p>
 
 <a class="btn btn-purple mt-1" href="https://typing-game-ys.netlify.app" target="_blank">타이핑 게임</a>
+  </div>
+</div>
+
 
 
 <p class="text-dark text-left mt-3">API와 토스트를 이용한 영어 타자게임입니다.</p>
