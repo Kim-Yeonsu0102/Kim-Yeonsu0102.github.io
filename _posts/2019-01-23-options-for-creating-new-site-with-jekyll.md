@@ -16,10 +16,10 @@ Link: https://typing-game-ys.netlify.app
 
 
 <div class="row justify-content-center pt-5">
-  <div class="col-6 pt-4">
+  <div class="col-10 pt-4">
       <img src="/assets/images/typing.png">
     </div>
-      <div class="col-6 pt-4">
+      <div class="col-10 pt-4">
       <img src="/assets/images/typing02.png">
     </div>
    
@@ -27,4 +27,3 @@ Link: https://typing-game-ys.netlify.app
 </div>
   
  
-</div>

@@ -42,7 +42,7 @@
         <script src="https://www.cssscript.com/demo/simple-typewriter-effect-pure-javascript-typewriterjs/typewriter.js"></script>
         <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 
-       
+        <link rel="stylesheet" href="/assets/accordion-menu/style.css" />
 
     
     
@@ -117,6 +117,55 @@
         </footer>
 
         {% include tracking-footer.html %}
+
+
+
+
+
+
+
+
+        
+<script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+<script>
+  /* paste this line in verbatim */
+  window.formbutton =
+    window.formbutton ||
+    function () {
+      (formbutton.q = formbutton.q || []).push(arguments);
+    };
+  /* customize formbutton below*/
+  formbutton("create", {
+    action: "https://formspree.io/f/moqrdgry",
+    title: "빠른 문의하기",
+    fields: [
+      {
+        type: "email",
+        label: "Email:",
+        name: "email",
+        required: true,
+        placeholder: "your@email.com",
+      },
+      {
+        type: "textarea",
+        label: "Message:",
+        name: "message",
+        placeholder: "What's on your mind?",
+      },
+      { type: "submit" 
+      },
+    ],
+    styles: {
+      title: {
+        backgroundColor: "#ad6edd",
+      },
+      button: {
+        backgroundColor: "#ad6edd",
+      },
+    },
+  });
+</script>
+
 
     </body>
 

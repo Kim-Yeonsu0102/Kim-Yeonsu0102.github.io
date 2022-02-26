@@ -63,7 +63,7 @@
   --titleFont: "HoengseongHanu";
   --titleColor: linear-gradient(180deg, #f0402d, #ff977a);
   --secTitFont: "NeoDunggeunmo";
-  --navDark: linear-gradient(45deg, black, #4e2170);
+  --navDark: linear-gradient(0deg, black, #4e2170);
 }
 
 *,
@@ -646,7 +646,7 @@ pre code {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
-  margin: 5rem auto;
+  margin: 3rem auto;
 }
 
 .row {

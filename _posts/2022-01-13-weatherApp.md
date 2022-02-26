@@ -16,11 +16,10 @@ Link: https://weather-app-ys.netlify.app
 
 
 <div class="row justify-content-center pt-5">
-  <div class="col-6 pt-4">
+  <div class="col-10 pt-4">
       <img src="/assets/images/weather.png">
     </div>
    
 </div>
   
  
-</div>
