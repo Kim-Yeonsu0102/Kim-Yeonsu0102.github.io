@@ -81,7 +81,10 @@
         </div>
 
         <!-- Content -->
-        <main role="main" class="site-content">
+
+
+        
+        <main role="main" class="site-content {% if page.url == '/AboutME.html' %} remove-site-content-margin {% endif %}">
             {{ content }}
         </main>
 

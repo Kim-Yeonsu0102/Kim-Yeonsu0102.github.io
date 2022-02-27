@@ -2,6 +2,9 @@
 layout: default
 ---
 
+{% if page.attr == {{site.baseurl}}/AboutME.html %}
+{% include introduce.html %}
+{% endif %}
 <div class="container" >
 <h3 class="font-weight-bold spanborder"><span>{{page.title}}</span></h3>
 <div class="page-content AboutMe-container" >

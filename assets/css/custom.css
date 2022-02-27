@@ -864,13 +864,25 @@ figure {
 
 
 /*질문란*/
+.Q-section {
+  margin-top:170px;
+ position: relative;
+ background: #fbfbfb;
+ padding: 0px;
+ min-height: 600px;
+ overflow-y: scroll;
+height: 100vh;
+ 
+}
 
- .Q-section {
+ .Q-section02 {
+  
   position: relative;
   background: #fbfbfb;
-  padding: 10px;
-  height: 600px;
-  overflow-y: scroll
+  padding: 0px;
+  height: 100%;;
+ 
+ 
 
 }
  .grid {
@@ -934,7 +946,7 @@ figure {
   font-weight: 400;
   font-size: 0.85rem;
   letter-spacing: -1px;
-  line-height: 1.5;
+  line-height: 1.3;
   display: inline-block;
 }
 
@@ -980,8 +992,7 @@ position: relative;
    color: #555;
    font-size: 0.95rem;
    font-family: var(--basicFont);
-   line-height: 1.5;
-   word-spacing: 98%;
+   line-height: 1.5; 
    word-wrap: break-word;
    word-break: keep-all;
    
@@ -991,6 +1002,25 @@ position: relative;
 
 
 
+.Q-section02::-webkit-scrollbar {
+  /* 스크롤바 막대 너비 설정 */
+  width: 12px;
+ 
+} /* 스크롤바 막대 설정*/
+.Q-section02::-webkit-scrollbar-thumb {
+  /* 스크롤바 막대 높이 설정 */
+  height:2%;
+  border-radius: 10px;
+  background-clip: padding-box;
+  border: 2px solid transparent;
+  background-color: cyan; /* 스크롤바 둥글게 설정 */
+ 
+} /* 스크롤바 뒷 배경 설정*/
+.Q-section02::-webkit-scrollbar-track {
+  border-radius: 10px;
+    box-shadow: inset 1px 1px 5px black;
+  
+}
 
 
 
@@ -1074,6 +1104,13 @@ position: relative;
     letter-spacing: -0.5px;
   }
 
+
+
+  #typing {
+    height: 100px !important;
+}
+
+
   #AboutMe-area .aboutArea {
     flex-wrap: wrap;
     height: 100vh;
@@ -1125,6 +1162,19 @@ position: relative;
 
   /*My self*/
 
+
+
+  .Q-section {
+height:100vh;
+  
+  }
+  .background-img {
+    height:100vh;
+  }
+  .box{
+    height:80%;
+  }
+
   .introTit {
     font-size: 1.3rem;
     line-height: 1.5;
@@ -1149,7 +1199,9 @@ position: relative;
   .naccs .menu div:nth-child(even) {
     border-left: 1px solid #fff;
   }
-
+  ul.nacc li p{
+    padding:20px; 
+  }
 
 
 
