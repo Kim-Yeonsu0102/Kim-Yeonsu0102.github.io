@@ -36,11 +36,17 @@
         </figure>
       </div>
 
-      <div class="col-lg-6 col-md-6 col-sm-12 aboutMe shine">
+      <div class="col-lg-6 col-md-6 col-sm-12 aboutMe shine02">
         <h1 id="typing"></h1>
-        <p class="aboutTxt">
+        <p class="aboutTxt pt-2 pl-md-4">
+          ㅡ </p>
+
+          <p class="aboutTxt pt-2 pl-md-4">
           안되면 되게하라!<br />
-          디자인을 전공 한 웹 개발자 김연수 입니다.
+          디자인을 전공 했기 때문에<br> 
+          다른 팀과의 협업을 잘 이끌어 나가며<br> 
+          창의적으로 다른 시각에서<br> 
+          볼 줄 아는 개발자 김연수 입니다! 
         </p>
       </div>
     </div>
@@ -74,14 +80,24 @@ if ($clickE) {
   });
 
   typewriter
-    .typeString("우리는 답을 찾을 것이다.")
+    .typeString("우리는")
+    .pauseFor(500)
+    .typeString("<br/>")
+    .typeString("가장 완벽한")
+    .pauseFor(500)
+    .typeString("<br/>")
+    .typeString("코드를 찾을 것이다..")
     .pauseFor(1500)
+    .deleteAll()
     .typeString("<br/>")
     .typeString("늘 그래왔듯이..")
-    .pauseFor(4000)
+    .pauseFor(1500)
     .deleteAll()
     //.typeString('<br/>')
     .typeString("안녕하세요.")
+    .pauseFor(1000)
+    .typeString("<br/>")
+    .typeString("프론트엔드를 꿈꾸는")
     .pauseFor(1000)
     .typeString("<br/>")
     .typeString("김연수 입니다.")
