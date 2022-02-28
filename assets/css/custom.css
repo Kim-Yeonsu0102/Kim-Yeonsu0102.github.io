@@ -678,18 +678,19 @@ figure {
 }
 
 .backBTN {
-  left: 45%;
+  left: 40%;
   bottom: 0px;
   border-radius: 20px;
   position: fixed;
   background: rgb(239 239 239 / 45%);
   color: #666;
-  padding: 5px;
+  padding: 6px;
   transition: 0.5s ease;
   font-size: 0.85rem;
   border: 1px solid #666;
-  width:200px;
-  height: 60px;
+ 
+  height: 35px;
+
 }
 
 .backBTN:hover {
