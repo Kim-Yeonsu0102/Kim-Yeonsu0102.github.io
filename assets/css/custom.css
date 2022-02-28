@@ -1146,6 +1146,15 @@ position: relative;
 
 
 
+/*퓨쳐드*/
+
+.futuredTxt{
+  font-size: 0.9rem;
+  line-height: 1.5; 
+  letter-spacing: -0.2px;
+}
+
+
 
 
 
@@ -1268,6 +1277,13 @@ position: relative;
   
 
 
+
+
+
+
+
+
+
   .chartTit {
     font-size: 14px;
     padding: 0;
@@ -1283,12 +1299,25 @@ position: relative;
     justify-content: center;
   }
 
+
   .noCodeLang {
     display: none;
   }
   .phonNum {
     font-size: 2rem;
   }
+
+
+
+
+
+
+
+
+
+
+
+
 
   /*My self*/
 

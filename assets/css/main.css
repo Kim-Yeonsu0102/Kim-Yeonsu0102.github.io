@@ -24,7 +24,7 @@
 :root {
   --lightGray: #e5e5e5;
   --blue: #7832e2;
-  --indigo: #502c6c;
+  --indigo: #673ab7;
   --purple: #ad6edd;
   --pink: #ff0266;
   --red: #ea2f65;
@@ -50,7 +50,7 @@
   --salmon: #ff977a;
   --cyan: #35bdff;
   --gray: #ced4da;
-  --indigo: #502c6c;
+ 
   --orange: #fbb500;
   --lightblue: #e8f3ec;
   --breakpoint-xs: 0;
@@ -9778,7 +9778,7 @@ a.text-gray:focus {
 }
 
 .text-indigo {
-  color: #502c6c !important;
+  color: #673ab7 !important;
 }
 
 a.text-indigo:hover,
