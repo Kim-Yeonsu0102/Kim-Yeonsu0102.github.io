@@ -1,21 +1,22 @@
 
 
-<div class="mb-3 d-flex justify-content-between main-loop-card flex-column col-md-3 col-6 flex-wrap projextCard pl-1 pr-1">
-	<div class=" row col-12 no-gutters">
+<div class="mb-3 d-flex justify-content-center main-loop-card flex-column 
+col-md-4 col-10 flex-wrap projextCard no-gutters " >
+	<div class=" col-12 pl-1 pr-1 ">
 		{% if post.image %}
-		<div class="effect-wrap col-12 pr-0 text-right mb-1 ">
+		<div class="effect-wrap col-12 pr-0 pl-0 text-right mb-1 ">
 
 		
 				<figure class="effect7">				
-					<a href="{{site.baseurl}}{{post.url}}" class="text-white d-block w-100 h200">
-					<div class="w-100 h200 cardImg " style="background:url({% if post.image contains "://" %}{{ post.image }}{% else %}{{ site.baseurl }}/{{ post.image }}{% endif %}")" alt="{{ post.title }}"></div>
+					<a href="{{site.baseurl}}{{post.url}}" class="text-white d-block w-100 h250">
+					<div class="w-100 h250 cardImg " style="background:url({% if post.image contains '://' %}{{ post.image }}{% else %}{{ site.baseurl }}/{{ post.image }}{% endif %} )top no-repeat ;background-size: cover;" alt="{{ post.title }}"></div>
 					<figcaption>
 						<h3>Kim YS Projects</h3>
 						{% for category in post.categories %}
-						<p>	{{ category | truncate: 8 }}</p>
+						<p>	{{ category | truncate: 6 }}</p>
 						{% endfor %}
 
-						<span href="{{site.baseurl}}{{post.url}}" class="btn btn-outline-cyan">Click!</span>
+						<!-- <span href="{{site.baseurl}}{{post.url}}" class="btn btn-cyan">Click!</span> -->
 					
 					</figcaption>			
 				</a>		
@@ -26,8 +27,8 @@
 	{% endif %}
 
 <div class="col-xl-12 col-lg-12 col-md-12 col-12 pl-2 pr-2">
-	<h2 class="mb-1 h6 font-weight-bold">
-	<a class="text-dark" href="{{site.baseurl}}{{post.url}}">{{ post.title }}</a>
+	<h2 class="mb-1 mt-2 h5 font-weight-bold">
+	<a class="text-purple" href="{{site.baseurl}}{{post.url}}">{{ post.title }}</a>
 	</h2>
 	<p class="excerpt">
 	   {{ post.excerpt  | strip_html | strip_newlines | truncate: 100}}
@@ -35,7 +36,7 @@
 	<small class="d-block text-muted small">
 		In <span class="catlist">
 		{% for category in post.categories %}
-		<a class="text-capitalize text-muted smoothscroll" href="{{site.baseurl}}/categories.html#{{ category | downcase }}">{{ category | truncate: 8 }}</a><span class="sep">, </span>
+		<a class="text-capitalize text-muted smoothscroll" href="{{site.baseurl}}/categories.html#{{ category | downcase }}">{{ category | truncate: 6 }}</a><span class="sep">, </span>
 		{% endfor %}
 		</span>
 	</small>

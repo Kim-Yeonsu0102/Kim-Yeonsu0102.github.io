@@ -320,8 +320,24 @@
   display: flex;
 }
 .projextCard {
-  height: 370px;
+  height: 390px;
   overflow: hidden;
+}
+.projectTit >a {
+  color:#673ab7;
+  font-size: 2rem;
+  transition: 0.5s ease;
+}
+
+
+
+.main-loop-card:nth-child(3) .projectCard .projectTitArea .projectTit >a{
+  font-size: 1.7rem;
+  letter-spacing: -2px;
+}
+
+.projectTit:hover >a{
+  color:#00bcd4;
 }
 
 .cardImg {
@@ -880,6 +896,7 @@ height: 100vh;
   background: #fbfbfb;
   padding: 0px;
   height: 700px;
+  overflow-x: hidden;
 }
  .grid {
 	 list-style: none;
@@ -955,7 +972,7 @@ height: 100vh;
 }
  ul.nacc {
 	 position: relative;
-	 height: 0px;
+	 min-height: 500px;
 	 list-style: none;
 	 margin: 0;
 	 padding: 0;
@@ -1134,6 +1151,21 @@ position: relative;
     margin: 0;
     padding: 0.5rem 1.2rem;
   }
+
+
+
+  .projextCard {
+    height: 420px;
+    overflow: hidden;
+  }
+  .projectTit >a {
+    color:#673ab7;
+    font-size: 1.8rem;
+    letter-spacing: -1.5px;
+    transition: 0.5s ease;
+  }
+  
+
 
   .chartTit {
     font-size: 14px;

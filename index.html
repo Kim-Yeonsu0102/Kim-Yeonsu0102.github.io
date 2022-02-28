@@ -16,61 +16,24 @@ description: "할 수 있다! 긍정에너지 김연수 입니다."
  
 
 <div class="row mt-5 justify-content-center  ">
-  <h3 class="font-weight-bold spanborder col-md-10 col-12"><span>All My Projects</span></h3>
-
-   <div class="col-md-8 col-12 d-flex flex-wrap">
-    <div class="col-12 main-loop ">
-        
-      
-      <div class="row h-max-100 flex-wrap flex-raw  mt-4">
+  
+  <div class="col-10 d-flex h-max-100 flex-wrap flex-raw justify-content-md-around justify-content-center ">
+    <h4 class="font-weight-bold spanborder col-12 mt-5"><span>All My Projects!!</span></h4>
 
         {% for post in paginator.posts %}
         
             {% include main-loop-card.html %}
         
         {% endfor %}
-        
-        <div class="mt-5">
-         <!-- Pagination links -->
-            {% if paginator.total_pages > 1 %}
-            <ul class="pagination col-12 no-gutters justify-content-center "> 
-              {% if paginator.previous_page %}
-                <li class="page-item"><a class="page-link" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a></li>
-              {% else %}
-                <li class="page-item disabled"><span class="prev page-link">&laquo;</span></li>
-              {% endif %}
-
-              {% for page in (1..paginator.total_pages) %}
-                {% if page == paginator.page %}
-                <li class="page-item disabled"><span class="webjeda page-link">{{ page }}</span></li>
-                {% elsif page == 1 %}
-                <li class="page-item"><a class="page-link" href="{{site.baseurl}}/">{{ page }}</a></li>
-                {% else %}
-                <li class="page-item"><a class="page-link" href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a></li>
-                {% endif %}
-              {% endfor %}
-
-              {% if paginator.next_page %}
-                <li class="page-item"><a class="page-link" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a></li>
-              {% else %}
-                <li class="page-item disabled"><span class="next page-link">&raquo;</span></li>
-              {% endif %}
-            </ul>
-            {% endif %}      
-        </div>
+      
+     
       </div> 
-    </div>
-    
-   
-    
-</div>
 
-<div class=" col-md-10 col-12">
-  {% include sidebar-featured.html %}    
-</div>
-</div> 
+            <div class=" col-md-10 col-12">
+              {% include sidebar-featured.html %}    
+            </div>
+  
 
 </div>
-
-
+</div>
 {% include Contact.html %}  

@@ -1,9 +1,10 @@
 
 
-<div class="mb-3 d-flex justify-content-between main-loop-card flex-column col-md-4 col-6 flex-wrap projextCard pl-1 pr-1 no-gutters">
-	<div class=" row no-gutters ">
+<div id="loopCard" class="mb-3 d-flex justify-content-center main-loop-card flex-column 
+col-md-5 col-10 flex-wrap projextCard no-gutters " >
+	<div class=" col-12 pl-1 pr-1 projectCard">
 		{% if post.image %}
-		<div class="effect-wrap col-12 pr-0 text-right mb-1 ">
+		<div class="effect-wrap col-12 pr-0 pl-0 text-right mb-1 ">
 
 		
 				<figure class="effect7">				
@@ -15,7 +16,7 @@
 						<p>	{{ category | truncate: 6 }}</p>
 						{% endfor %}
 
-						<!-- <span href="{{site.baseurl}}{{post.url}}" class="btn btn-cyan">Click!</span> -->
+						<span href="{{site.baseurl}}{{post.url}}" class="btn btn-purple">Click!</span>
 					
 					</figcaption>			
 				</a>		
@@ -25,20 +26,16 @@
 		</div>
 	{% endif %}
 
-<div class="col-xl-12 col-lg-12 col-md-12 col-12 pl-2 pr-2">
-	<h2 class="mb-1 mt-2 h5 font-weight-bold">
-	<a class="text-purple" href="{{site.baseurl}}{{post.url}}">{{ post.title }}</a>
+<div class="col-xl-12 col-lg-12 col-md-12 col-12 pl-2 pr-2 d-flex align-items-center justify-content-center flex-column flex-nowrap d-flex projectTitArea  ">
+	<h2 class="mb-3 mt-2 font-weight-bold text-center col-12 projectTit ">
+	<a href="{{site.baseurl}}{{post.url}}">{{ post.title }}</a>
 	</h2>
-	<p class="excerpt">
-	   {{ post.excerpt  | strip_html | strip_newlines | truncate: 100}}
-	</p>
-	<small class="d-block text-muted small">
-		In <span class="catlist">
-		{% for category in post.categories %}
-		<a class="text-capitalize text-muted smoothscroll" href="{{site.baseurl}}/categories.html#{{ category | downcase }}">{{ category | truncate: 6 }}</a><span class="sep">, </span>
-		{% endfor %}
-		</span>
-	</small>
+		 
+	<p class="small text-left col-11 no-gutters"> {{ post.codeLanguage | truncate: 500 }} </p>
+	<p class="small text-left pt-1 col-11 no-gutters">	 {{ post.myjob | truncate: 500 }} </p>
+		
+	
+		 
 	<!-- <small class="text-muted">
 		{{ post.date | date: '%b %d, %Y' }}
 	</small> -->
