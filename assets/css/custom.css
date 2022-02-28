@@ -325,16 +325,109 @@
 }
 .projectTit >a {
   color:#673ab7;
-  font-size: 2rem;
+  font-size: 1.8rem;
   transition: 0.5s ease;
+  letter-spacing: -2px;
+}
+.projectPicLink{
+  width: 100%; 
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+position: relative;
+}
+.projectPicLink>i {
+font-size:1.8rem;
+position:absolute;
+top:8px ; 
+right:8px;
+color:#005ba9;
+z-index:3;
+}
+.projectPicLink:hover > i{
+  color:#fff;
+}
+.effect5 {
+  position: relative;
+  width: 400px; height: 300px;
+  background: #2196f3;
+  overflow: hidden;
+
+}
+.effect5 img {
+  width: 100%;
+  filter: sepia(20%) saturate(60%);
+  height:300px;
+
+}
+.effect5 figcaption {
+  position: absolute;
+  top: 0; right:0; bottom: 0; left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 1;
+  text-align: center;
+  line-height: 1.7em;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 20px;
+  opacity:0;
+  transition: all 0.3s ease;
+}
+.effect5 figcaption h3 {
+  font-size: 1.3em;
+  letter-spacing: 2px;
+  font-weight: 100;
+}
+.effect5 figcaption em {
+  display: block;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+.effect5:before,
+.effect5:after {
+  content: '';
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  background-color: rgba(0,0,0,0.3);
+  border-top: 70px solid rgba(0,0,0,0.4);
+  border-bottom: 70px solid rgba(0,0,0,0.4);
+  transition: all 0.3s ease;
+  z-index: 1;
+  opacity:0;
+}
+.effect5:before {
+  transform: scaley(2);
+}
+.effect5:after {
+  transform: scaley(2);
+}
+
+.effect5:hover:before,
+.effect5:hover:after {
+  opacity:1;
+  transform: scale(1);
+}
+.effect5:hover > img {
+  opacity:0.7;
+}
+.effect5:hover figcaption {
+  opacity:1;
+  transition-delay: 0.1s;
 }
 
 
 
+
+/* 
 .main-loop-card:nth-child(3) .projectCard .projectTitArea .projectTit >a{
   font-size: 1.7rem;
   letter-spacing: -2px;
-}
+} */
 
 .projectTit:hover >a{
   color:#00bcd4;
@@ -595,6 +688,8 @@ figure {
   transition: 0.5s ease;
   font-size: 0.85rem;
   border: 1px solid #666;
+  width:200px;
+  height: 60px;
 }
 
 .backBTN:hover {
@@ -1067,6 +1162,9 @@ position: relative;
 
 /* 미디어쿼리 분기점  */
 
+
+
+
 @media (max-width: 767px) {
   .sec-title {
     font-size: 2rem;
@@ -1160,10 +1258,12 @@ position: relative;
   }
   .projectTit >a {
     color:#673ab7;
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     letter-spacing: -1.5px;
     transition: 0.5s ease;
   }
+
+  
   
 
 

@@ -1,17 +1,33 @@
 ---
 layout: post
 title: "typing-game"
-categories: [HTML, Sass, JS]
+categories: [HTML, Sass, JS, API, node.JS]
 image: assets/images/typing.png
 Link: https://typing-game-ys.netlify.app
-codeLanguage: '<b class="text-purple pr-1">개발 언어:</b>  HTML,CSS,Scss,Javascript'
+codeLanguage: '<b class="text-purple pr-1">개발 언어:</b> HTML, Sass, JS, API, node.JS'
 myjob: '<b class="text-purple pr-1">담당 업무: </b> 디자인,퍼블리싱,페이지 개발 (All 100%)'
   
 
 ---
+
 <div class="row border-bottom justify-content-around flex-md-nowrap flex-wrap">
   
-<div class="col-md-5 align-self-center w-100 h200 of-hidden"><img class="rounded" src="/assets/images/typing.png" alt="{{ page.title }}"></div>
+  <div class="col-md-5 align-self-center  w-100 h200 of-hidden">
+    <div class="projectPicLink position-relative">
+     <i class="material-icons">add_circle_outline</i>
+    <a href="https://typing-game-ys.netlify.app" target="_blank" alt="타이핑 게임" class=" projectPicLink">
+      <figure class="effect5 ">
+        <img src="/assets/images/typing.png" alt="타이핑 게임">       
+        <figcaption>
+          <h3>Let's<em>See</em></h3>
+        </figcaption>
+      </figure>      
+      </a>
+    </div>
+    
+  </div>
+  
+
   <div class="pdtb col-md-5 pr-0 col-7 align-self-center offset-md-0 offset-3">
   <p class="text-dark text-left"><b>개발 기간: </b> 2022.1.26~2022.02.02</p>
   <p class="text-dark text-left "><b>개발 언어: </b> HTML,CSS,Scss,Javascript </p>
@@ -20,7 +36,7 @@ myjob: '<b class="text-purple pr-1">담당 업무: </b> 디자인,퍼블리싱,�
   <p class="text-dark text-left pl-2"> 퍼블리싱 (100%)</p>
   <p class="text-dark text-left pl-2"> 사용자 페이지 개발 (100%)</p>
 
-<a class="btn btn-purple mt-1" href="https://typing-game-ys.netlify.app" target="_blank">타이핑 게임</a>
+<a class="btn btn-purple mt-1" href="https://github.com/Kim-Yeonsu0102/typing-game" target="_blank">GitHub Link</a>
   </div>
 </div>
 

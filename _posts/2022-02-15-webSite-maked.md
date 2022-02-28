@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "My site Design"
-categories: [Design]
+categories: [Design,HTML,CSS,JS]
 image: assets/images/demo1.jpg
 codeLanguage: '<b class="text-purple pr-1">개발 언어:</b>  HTML,CSS,Scss,Javascript'
 myjob: '<b class="text-purple pr-1">담당 업무: </b> 디자인,퍼블리싱,페이지 개발 (All 100%)'
@@ -10,8 +10,10 @@ myjob: '<b class="text-purple pr-1">담당 업무: </b> 디자인,퍼블리싱,�
 ---
 
 
-<p class="text-dark text-left">실제로 회사에서 사용된 저의 홈페이지 작업물들 입니다.</p>
-<p class="text-dark text-left">호스팅이 끊긴 곳이 많아서 캡쳐로 대신합니다.</p>
+<p class="text-dark text-center">실제 회사에서 사용된 저의 홈페이지 작업물들 입니다.</p>
+
+<p class="text-dark text-center">기본 구조가 빌드 되어있는 상황에 기획에 맞게 수정 및 변형, 업데이트를 하는것이 주 목적이었습니다.</p>
+<p class="text-dark text-center">호스팅이 끊긴 곳이 많아서 캡쳐로 대신합니다.</p>
 
  <link rel="stylesheet" href="\bower_components\magnific-popup\dist\magnific-popup.css">
 

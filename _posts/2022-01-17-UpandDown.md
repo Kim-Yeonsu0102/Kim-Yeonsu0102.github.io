@@ -10,9 +10,25 @@ myjob: '<b class="text-purple pr-1">담당 업무: </b> 디자인,퍼블리싱,�
 
 ---
 
+
 <div class="row border-bottom justify-content-around flex-md-nowrap flex-wrap">
   
-  <div class="col-md-5 align-self-center  w-100 h200 of-hidden "><img class="rounded" src="/assets/images/UpandDown.png" alt="{{ page.title }}" style=" top: -57px; position: absolute;"></div>
+  <div class="col-md-5 align-self-center  w-100 h200 of-hidden">
+    <div class="projectPicLink position-relative">
+     <i class="material-icons">add_circle_outline</i>
+    <a href="https://upanddown-ys.netlify.app/" target="_blank" alt="Up & Down" class=" projectPicLink">
+      <figure class="effect5 ">
+        <img src="/assets/images/UpandDown.png" alt="Up & Down">       
+        <figcaption>
+          <h3>Let's<em>See</em></h3>
+        </figcaption>
+      </figure>      
+      </a>
+    </div>
+    
+  </div>
+  
+
     <div class="pdtb col-md-5 pr-0 col-7 align-self-center offset-md-0 offset-3">
     <p class="text-dark "><b>개발 기간: </b> 2022.01.23~2022.01.31</p>
     <p class="text-dark  "><b>개발 언어: </b> HTML,CSS,Scss,Javascript </p>
@@ -22,7 +38,7 @@ myjob: '<b class="text-purple pr-1">담당 업무: </b> 디자인,퍼블리싱,�
             <dd class="text-dark small"> 퍼블리싱 (100%)</dd>
             <dd class="text-dark small"> 사용자 페이지 개발 (100%)</dd>
         </dl>
-    <a class="btn btn-purple mt-3" href="https://puzzlegame-ys.netlify.app/" target="_blank"> Puzzle Game 보기</a>
+<a class="btn btn-purple mt-1" href="https://github.com/Kim-Yeonsu0102/UpandDown" target="_blank">GitHub Link</a>
     </div>
   </div>
 
@@ -36,7 +52,7 @@ myjob: '<b class="text-purple pr-1">담당 업무: </b> 디자인,퍼블리싱,�
 
 <div class="row justify-content-center pt-5 flex-wrap">
   <div class="col-10 pt-4">
-      <img src="/assets/images/UpandDown.png">
+      <img src="/assets/images/UpandDown01.png">
     </div>
    
 </div>
