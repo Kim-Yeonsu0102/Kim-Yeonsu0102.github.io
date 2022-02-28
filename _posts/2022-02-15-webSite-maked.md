@@ -3,8 +3,8 @@ layout: post
 title: "My site Design"
 categories: [Design]
 image: assets/images/demo1.jpg
-codeLanguage: '<b class="text-purple pr-2">개발 언어:</b>  HTML,CSS,Scss,Javascript'
-myjob: '<b class="text-purple pr-2">담당 업무: </b> 디자인,퍼블리싱,페이지 개발 (All 100%)'
+codeLanguage: '<b class="text-purple pr-1">개발 언어:</b>  HTML,CSS,Scss,Javascript'
+myjob: '<b class="text-purple pr-1">담당 업무: </b> 디자인,퍼블리싱,페이지 개발 (All 100%)'
   
 
 ---
