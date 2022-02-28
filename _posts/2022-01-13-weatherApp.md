@@ -44,7 +44,7 @@ myjob: '<b class="text-purple pr-1">담당 업무: </b> 디자인,퍼블리싱,�
 
 <div class="row justify-content-center pt-5 flex-wrap">
   <div class="col-10 pt-4">
-      <img src="/assets/images/weather01.png">
+      <img src="/assets/images/weather02.png">
     </div>
    
 </div>

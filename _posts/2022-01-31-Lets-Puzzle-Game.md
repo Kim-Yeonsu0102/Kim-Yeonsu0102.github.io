@@ -51,7 +51,7 @@ myjob: '<b class="text-purple pr-1">담당 업무: </b> 디자인,퍼블리싱,�
 
   <div class="row justify-content-center pt-5 flex-wrap ">
     <div class="col-md-8 col-12 pt-4">
-      <img src="/assets/images/puzzle01.png">
+      <img src="/assets/images/puzzle012.png">
     </div>
     <div class="col-md-8 col-12  pt-4">
      <img src="/assets/images/puzzle02.png">
