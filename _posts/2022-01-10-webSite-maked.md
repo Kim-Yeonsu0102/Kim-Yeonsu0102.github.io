@@ -22,6 +22,7 @@ myjob: '<b class="text-purple pr-1">담당 업무: </b> 디자인,퍼블리싱,�
 <img src="/assets/images/siteImade/01/01_01.png" />
 </a>
 
+
 <span class="d-block mt-2 text-purple col-12 font-weight-bold text-center">거성닥트</span>
 
 </li>
