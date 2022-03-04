@@ -12,6 +12,7 @@
   padding: 3rem 0;
 }
 
+
 .fadeInOut {
   animation: fadeInOut 8s ease-in-out infinite;
 }
@@ -711,15 +712,16 @@ figure {
 
   margin-top: 30px;
 }
-.siteUl > li > a {
+.siteUl > li > .gallery-item {
   border: 1px solid #ccc;
   height: 200px;
   overflow: hidden;
   border-radius: 10px;
   background: #000;
+  cursor: pointer;
 }
 
-.siteUl > li > a:hover img {
+.siteUl > li > .gallery-item:hover img {
   opacity: 0.6;
 }
 
@@ -727,6 +729,15 @@ figure {
   width: 100%;
 
   height: max-content;
+}
+
+
+.c-none{
+  cursor: default !important;
+  pointer-events: none;
+}
+a .btn {
+  height:40px !important;
 }
 
 @media (max-width: 970px) {

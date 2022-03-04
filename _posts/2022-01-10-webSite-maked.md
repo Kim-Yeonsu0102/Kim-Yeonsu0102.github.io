@@ -10,20 +10,20 @@ myjob: '<b class="text-purple pr-1">담당 업무: </b> 디자인,퍼블리싱,�
 <p class="text-dark text-center">실제 회사에서 사용된 저의 홈페이지 작업물들 입니다.</p>
 
 <p class="text-dark text-center">기본 구조가 빌드 되어있는 상황에 기획에 맞게 수정 및 변형, 업데이트를 하는것이 주 목적이었습니다.</p>
-<p class="text-dark text-center">호스팅이 끊긴 곳이 많아서 캡쳐로 대신합니다.</p>
-
+<p class="text-dark text-center">기본적인 틀을 제공한 솔루션을 제외한 디자인부터 구조 배치를 위한 HTML,CSS,기능추가를 위한 JS 까지의 퍼블리싱 기여도 100% 입니다. </p>
+<p class="text-dark text-center">호스팅이 끊긴 곳은 캡쳐로 대신합니다. </p>
  <link rel="stylesheet" href="\bower_components\magnific-popup\dist\magnific-popup.css">
 
 <div class="row flex-row flex-wrap">
 <ul class="col12 d-flex flex-wrap siteUl">
 
 <li class="col-6 col-md-4">
-<a id="open-popup01" class="d-flex flex-column text-center image-link gallery-item mfp-image no-gutters" href="/assets/images/siteImade/01/01_01.png">
+<a id="open-popup01" class="d-flex flex-column text-center image-link gallery-item mfp-image no-gutters" >
 <img src="/assets/images/siteImade/01/01_01.png" />
 </a>
 
 
-<span class="d-block mt-2 text-purple col-12 font-weight-bold text-center">거성닥트</span>
+<a class=" btn btn-purple mt-2 text-white col-12 font-weight-bold text-center" href="http://gsduct.adwinkorea.kr/" target="_blank">거성닥트 Link</a>
 
 </li>
 
@@ -32,7 +32,8 @@ myjob: '<b class="text-purple pr-1">담당 업무: </b> 디자인,퍼블리싱,�
 <img src="/assets/images/siteImade/02/02_01.png" />
 </a>
 
-<span class="d-block mt-2 text-purple col-12 font-weight-bold text-center">길심리발달센터</span>
+
+<a class="c-none   btn btn-gray  mt-2 text-white col-12 font-weight-bold text-center" >길심리발달센터</a>
 
 </li>
 
@@ -48,15 +49,17 @@ myjob: '<b class="text-purple pr-1">담당 업무: </b> 디자인,퍼블리싱,�
 <a id="open-popup04" class="d-flex flex-column text-center image-link gallery-item mfp-image no-gutters" href="/assets/images/siteImade/04/04_01.png">
 <img src="/assets/images/siteImade/04/04_01.png" />
 </a>
-<span class="d-block mt-2 text-purple col-12 font-weight-bold text-center">보령전통식품</span>
+
+<a class=" btn btn-purple mt-2 text-white col-12 font-weight-bold text-center" href="http://kby0962.adwinkorea.kr/" target="_blank">보령전통식품 Link</a>
+
 </li>
 
 <li class="col-6 col-md-4">
 <a id="open-popup05" class="d-flex flex-column text-center image-link gallery-item mfp-image no-gutters" href="/assets/images/siteImade/05/05_01.png">
 <img src="/assets/images/siteImade/05/05_01.png" />
 </a>
+<a class="c-none   btn btn-gray  mt-2 text-white col-12 font-weight-bold text-center" >비전창호 Link</a>
 
-<span class="d-block mt-2 text-purple col-12 font-weight-bold text-center">비전창호</span>
 
 </li>
 
@@ -64,8 +67,8 @@ myjob: '<b class="text-purple pr-1">담당 업무: </b> 디자인,퍼블리싱,�
 <a id="open-popup06" class="d-flex flex-column text-center image-link gallery-item mfp-image no-gutters" href="/assets/images/siteImade/06/06_01.png">
 <img src="/assets/images/siteImade/06/06_01.png" />
 </a>
+<a class="c-none  btn btn-gray  mt-2 text-white col-12 font-weight-bold text-center" >솔담디자인 Link</a>
 
-<span class="d-block mt-2 text-purple col-12 font-weight-bold text-center">솔담디자인</span>
 
 </li>
 
@@ -73,8 +76,8 @@ myjob: '<b class="text-purple pr-1">담당 업무: </b> 디자인,퍼블리싱,�
 <a id="open-popup07" class="d-flex flex-column text-center image-link gallery-item mfp-image no-gutters" href="/assets/images/siteImade/07/07_01.png">
 <img src="/assets/images/siteImade/07/07_01.png" />
 </a>
+<a class="c-none  btn btn-gray mt-2 text-white col-12 font-weight-bold text-center" >영광손해사정 Link</a>
 
-<span class="d-block mt-2 text-purple col-12 font-weight-bold text-center">영광손해사정</span>
 
 </li>
 
@@ -82,7 +85,7 @@ myjob: '<b class="text-purple pr-1">담당 업무: </b> 디자인,퍼블리싱,�
 <a id="open-popup08" class="d-flex flex-column text-center image-link gallery-item mfp-image no-gutters" href="/assets/images/siteImade/08/08_01.png">
 <img src="/assets/images/siteImade/08/08_01.png" />
 </a>
-<span class="d-block mt-2 text-purple col-12 font-weight-bold text-center">토탈지게차서비스</span>
+<a class=" btn btn-purple mt-2 text-white col-12 font-weight-bold text-center" href="http://totallift.adwinkorea.kr/" target="_blank">토탈지게차서비스 Link</a>
 
 </li>
 
@@ -91,7 +94,7 @@ myjob: '<b class="text-purple pr-1">담당 업무: </b> 디자인,퍼블리싱,�
 <img src="/assets/images/siteImade/09/09_01.png" />
 </a>
 
-<span class="d-block mt-2 text-purple col-12 font-weight-bold text-center">학원시안</span>
+<a class=" btn btn-purple mt-2 text-white col-12 font-weight-bold text-center" href="http://adwinpf04.adwinkorea.kr/" target="_blank">학원시안 Link</a>
 
 </li>
 
@@ -99,8 +102,8 @@ myjob: '<b class="text-purple pr-1">담당 업무: </b> 디자인,퍼블리싱,�
 <a id="open-popup10" class="d-flex flex-column text-center image-link gallery-item mfp-image no-gutters" href="/assets/images/siteImade/10/10_01.png">
 <img src="/assets/images/siteImade/10/10_01.png" />
 </a>
+<a class=" btn btn-purple mt-2 text-white col-12 font-weight-bold text-center" href="http://hsparking.adwinkorea.kr/" target="_blank">회산 Link</a>
 
-<span class="d-block mt-2 text-purple col-12 font-weight-bold text-center">회산</span>
 
 </li>
 </ul>
