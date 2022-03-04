@@ -138,10 +138,10 @@ $(document).ready(function() {
   tNext: 'Next (Right arrow key)', // title for right button
   tCounter: '<span class="mfp-counter">%curr% of %total%</span>'
   },
-       image: { verticalFit: false ,
-       cursor: 'mfp-zoom-out-cur',},
+       image: { verticalFit: false }
+      //  cursor: 'mfp-zoom-out-cur'},
 
-       zoom: {enabled: true,   duration: 500 ,easing: 'ease-in-out' }
+      //  zoom: {enabled: true,   duration: 500 ,easing: 'ease-in-out' }
  });
 
   $('#open-popup02').magnificPopup({
