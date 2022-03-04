@@ -1,16 +1,16 @@
 ---
 layout: post
-title: "My site Design"
-categories: [Design, HTML, CSS, JS]
+title: "My Web Publishing"
+categories: [Publishing,Deasign, HTML, CSS, JS]
 image: assets/images/demo1.jpg
 codeLanguage: '<b class="text-purple pr-1">개발 언어:</b>  HTML,CSS,Scss,Javascript'
 myjob: '<b class="text-purple pr-1">담당 업무: </b> 디자인,퍼블리싱,페이지 개발 (All 100%)'
 ---
 
-<p class="text-dark text-center">실제 회사에서 사용된 저의 홈페이지 작업물들 입니다.</p>
+<p class="text-dark text-center">실제 회사에서 Publishing한 저의 홈페이지 작업물들 입니다.</p>
 
 <p class="text-dark text-center">기본 구조가 빌드 되어있는 상황에 기획에 맞게 수정 및 변형, 업데이트를 하는것이 주 목적이었습니다.</p>
-<p class="text-dark text-center">기본적인 틀을 제공한 솔루션을 제외한 디자인부터<br/> 구조 배치를 위한 HTML,CSS,기능추가를 위한 JS 까지의 퍼블리싱 기여도 100% 입니다. </p>
+<p class="text-dark text-center">기본적인 틀을 제공한 솔루션을 제외한 디자인부터<br/> 구조 배치를 위한 HTML,CSS,기능추가를 위한 JS 까지의 Publishing 기여도 100% 입니다. </p>
 <p class="text-dark text-center">호스팅이 끊긴 곳은 캡쳐로 대신합니다. </p>
  <link rel="stylesheet" href="\bower_components\magnific-popup\dist\magnific-popup.css">
 
