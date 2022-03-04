@@ -178,11 +178,7 @@ $(document).ready(function() {
             tCounter: '<span class="mfp-counter">%curr% of %total%</span>'
 
   },
-       image: {  verticalFit: false ,
-       cursor: 'mfp-zoom-out-cur',},
-
-       zoom: {enabled: true,   duration: 500 ,easing: 'ease-in-out' }
-
+       image: {  verticalFit: false }
  });
 
 $('#open-popup03').magnificPopup({
@@ -212,9 +208,7 @@ $('#open-popup03').magnificPopup({
 
   },
        image: {  verticalFit: false ,
-       cursor: 'mfp-zoom-out-cur',},
-
-       zoom: {enabled: true,   duration: 500 ,easing: 'ease-in-out' }
+       }
 
  });
 
@@ -253,9 +247,7 @@ $('#open-popup03').magnificPopup({
 
   },
        image: {  verticalFit: false ,
-       cursor: 'mfp-zoom-out-cur',},
-
-       zoom: {enabled: true,   duration: 500 ,easing: 'ease-in-out' }
+       }
 
  });
 
@@ -298,9 +290,7 @@ $('#open-popup03').magnificPopup({
 
   },
        image: {  verticalFit: false ,
-       cursor: 'mfp-zoom-out-cur',},
-
-       zoom: {enabled: true,   duration: 500 ,easing: 'ease-in-out' }
+       }
 
  });
 
@@ -339,9 +329,7 @@ $('#open-popup03').magnificPopup({
 
   },
        image: {  verticalFit: false ,
-       cursor: 'mfp-zoom-out-cur',},
-
-       zoom: {enabled: true,   duration: 500 ,easing: 'ease-in-out' }
+       }
 
  });
 
@@ -380,9 +368,7 @@ $('#open-popup03').magnificPopup({
 
   },
        image: {  verticalFit: false ,
-       cursor: 'mfp-zoom-out-cur',},
-
-       zoom: {enabled: true,   duration: 500 ,easing: 'ease-in-out' }
+       }
 
  });
 
@@ -417,9 +403,7 @@ $('#open-popup03').magnificPopup({
 
   },
        image: {  verticalFit: false ,
-       cursor: 'mfp-zoom-out-cur',},
-
-       zoom: {enabled: true,   duration: 500 ,easing: 'ease-in-out' }
+       }
 
  });
 
@@ -450,9 +434,7 @@ $('#open-popup03').magnificPopup({
 
   },
        image: {  verticalFit: false ,
-       cursor: 'mfp-zoom-out-cur',},
-
-       zoom: {enabled: true,   duration: 500 ,easing: 'ease-in-out' }
+       }
 
  });
 
@@ -491,9 +473,7 @@ $('#open-popup03').magnificPopup({
 
   },
        image: {  verticalFit: false ,
-       cursor: 'mfp-zoom-out-cur',},
-
-       zoom: {enabled: true,   duration: 500 ,easing: 'ease-in-out' }
+       }
 
  });
 
